@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+}
+.header{
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.amarelo{
+    background-color: #faf32c;
+    height: 8em;
+}
+.amarelo2{
+    background-color: #f9cb2b;
+    height: 8em;
+}
+.vermelho{
+    background-color: #e32e2e;
+    width: 100%;
+    height: 6em;
+}
+.laranja{
+    background-color: #b47c5a;
+    height: 36em;
+    width: 100%;
+}
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.azul{
+    background-color: #3da1e6;
+    height: 6em;
+}
+.verde{
+    background-color: #3cb04f;
+    height: 6em;
+}
+.roxo{
+    background-color: #9f4ba2;
+    height: 6em;
+}
+.cinza{
+    height: 6em;
+    background-color: #7f7f7f;
+}
