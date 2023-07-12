@@ -1,0 +1,7 @@
+BOAS PRÁTICAS HTML
+
+Identação
+Simplicidade
+Aspas duplas
+Não utilize tabelas para layouts
+Usar <thead> <tbody> e <tfoot>

@@ -48,3 +48,7 @@ body{
     height: 6em;
     background-color: #7f7f7f;
 }
+
+/*  usar height: 100vh
+    dividir grid row: 1fr 1fr 3fr 1fr 1fr 
+*/
