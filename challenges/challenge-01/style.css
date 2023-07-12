@@ -1,0 +1,49 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+}
+
+.first-div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.first-div .first-div-1 {
+    background-color: yellow;
+}
+
+.first-div .first-div-2 {
+    background-color: orange;
+}
+
+.second-div {
+    background-color: red;
+}
+
+.third-div {
+    background-color: rgba(165, 42, 42, 0.753);
+}
+
+.fourth-div {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.fourth-div-1 {
+    background-color: blue;
+}
+
+.fourth-div-2 {
+    background-color: green;
+}
+
+.fourth-div-3 {
+    background-color: purple;
+}
+
+.fifth-div {
+    background-color: grey;
+}
