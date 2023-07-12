@@ -5,3 +5,7 @@ Simplicidade
 Aspas duplas
 Não utilize tabelas para layouts
 Usar <thead> <tbody> e <tfoot>
+
+cel para tablet
+- muda o menu e linhas divididas em duas colunas
+- muda a quantidade de colunas de 2 para 3 em uma mesma linha
