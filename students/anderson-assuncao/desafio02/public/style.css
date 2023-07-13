@@ -95,9 +95,9 @@ main {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  position: relative;
-  min-height: 84vh;
+  height: 730px;
 }
+
 
 h1 {
   font-size: 1.6em;
@@ -135,6 +135,8 @@ h1 {
 .texto {
   grid-area: 2 / 1 / 3 / 2;
   margin: 5px;
+  height: auto;
+  overflow-y: scroll;
 }
 
 .ads,
@@ -222,8 +224,7 @@ footer {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    position: relative;
-    min-height: 84vh;
+    height: 1280px;
   }
 
   h1 {
@@ -245,7 +246,7 @@ footer {
     margin: 5px;
     font-size: 1.2rem;
   }
-
+  
   .video {
     display: block;
     font-size: 1.2rem;
@@ -309,8 +310,7 @@ footer {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    position: relative;
-    min-height: 84vh;
+    height: 100%;
   }
 
   .links {
@@ -319,6 +319,7 @@ footer {
 
   .texto {
     grid-area: 3 / 1 / 4 / 2;
+    overflow: hidden;
   }
 
   .video {
