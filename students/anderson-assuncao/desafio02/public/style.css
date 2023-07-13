@@ -30,6 +30,11 @@ header {
   background-color: #46057a;
 }
 
+header img {
+  max-width: 15vw;
+  max-height: 15vw;
+}
+
 .logo {
   grid-area: 1 / 1 / 2 / 2;
   text-align: center;
@@ -47,6 +52,11 @@ header {
 
 #inputButton {
   color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+#inputName {
+  font-family: 'Inter', sans-serif;
 }
 
 #listMenu {
@@ -86,6 +96,7 @@ main {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   position: relative;
+  min-height: 84vh;
 }
 
 h1 {
@@ -157,6 +168,11 @@ footer {
     font-size: 1.6rem;
   }
 
+  header img {
+    max-width: 15vw;
+    max-height: 15vw;
+  }
+
   body {
     width: 100%;
     overflow-x: hidden;
@@ -207,6 +223,7 @@ footer {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     position: relative;
+    min-height: 84vh;
   }
 
   h1 {
@@ -269,6 +286,10 @@ footer {
     font-size: 1.6rem;
   }
 
+  header img {
+    max-width: 15vw;
+    max-height: 15vw;
+  }
   .logo {
     grid-area: 1 / 1 / 2 / 2;
   }
