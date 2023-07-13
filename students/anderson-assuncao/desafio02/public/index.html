@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Meus Links</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span>Meus Links</span>
+        </div>
+        <div class="form">
+            <form action="">
+                <input type="text" id="inputName"
+                    placeholder="Digite o nome do endereço e o endereço separados por vírgula...">
+                <button type="input" id="inputButton">Adicionar Link</button>
+            </form>
+        </div>
+
+    </header>
+
+    <nav>
+        <a href="#"><i id="hamburguer" onclick="showMenu()" class="fa-solid fa-bars fa-shake" style="color: #fff;"></i></a>
+            <div id="navbar" class="nav-responsive">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#favoritos">Links</a></li>
+                    <li><a href="#comoUsar">Como usar</a></li>
+                    <li><a href="#rodape">Rodapé</a></li>
+                </ul>
+            </div>
+    </nav>
+
+    <main>
+        <div id="favoritos" class="links">
+            <h1>Lista de favoritos:</h1>
+
+            <ul id="listOfLinks">
+                
+            </ul>
+
+        </div>
+
+        <div id="comoUsar" class="texto">
+            <h1>Como usar:</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius harum labore cupiditate, non, laborum, sint quibusdam possimus sequi amet nostrum necessitatibus perferendis consectetur natus dicta asperiores inventore dignissimos veritatis doloremque.
+        </div>
+
+        <div id="video" class="video">
+            <p>aqui ficara o vídeo</p>
+        </div>
+
+        <div id="ads" class="ads">
+            <p>aqui ficara o ads</p>
+        </div>
+
+    </main>
+
+    <footer id="rodape">
+        <span>Desenvolvido com <i class="fa-solid fa-heart" style="color: #ff0000;"></i></span>
+    </footer>
+
+
+</body>
+
+</html>
