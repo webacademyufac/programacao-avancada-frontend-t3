@@ -135,6 +135,8 @@ footer {
   text-align: center;
   color: #46057a;
   font-size: 1.2rem;
+  bottom: 0;
+  position: relative;
 }
 
 /* tablet css */
@@ -247,6 +249,8 @@ footer {
     text-align: center;
     color: #46057a;
     font-size: 1.2rem;
+    bottom: 0;
+    position: relative;
   }
 
 }
@@ -310,6 +314,8 @@ footer {
     text-align: center;
     color: #46057a;
     font-size: 1.2rem;
+    bottom: 0;
+    position: relative;
   }
 
 }
