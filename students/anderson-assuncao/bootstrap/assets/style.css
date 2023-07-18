@@ -1,3 +1,51 @@
-* {
+/* estilo gerais */
+
+body {
     font-family: 'Inter', sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p, li {
+    color: #444;
+    font-size: 14px;
+}
+
+
+/* estilo navbar */
+
+header, .navbar {
+    background-color: #353d41;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #f5f5f5;
+}
+
+.navbar-brand:hover {
+    color: #f5f5f5;
+}
+
+#navbar-links a {
+    color: #f5f5f5;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1.8rem .8rem;
 }
