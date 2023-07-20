@@ -1,0 +1,80 @@
+/* Geral */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+  padding: 70px 0;
+}
+
+.row {
+  margin: 0;
+}
+
+p, li {
+  color: #0f1026;
+  font-size: 14px;
+}
+
+/* Sobre */
+
+#about-area {
+  background-color: #f2f2f2;
+}
+
+.main-title {
+  margin: 0 0 65px 0;
+  text-align: center;
+  font-size: 40px;
+  color: #0f1026;
+}
+
+#about-title {
+  color: #0f1026;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#about-list {
+  list-style: none;
+  padding: 0;
+}
+
+#about-list i {
+  color: #4973f2;
+  margin-right: 15px;
+}
+
+#about-list li {
+  line-height: 30px;
+}
+
+/* Serviços */
+
+.service-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service-box i {
+  font-size: 36px;
+  color: #0f1026;
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.service-box:hover > i, .service-box:hover > h3 {
+  color: #4973f2;
+}
+
+.service-box i, .service-box h3 {
+  transition: 1s;
+}
+
+
