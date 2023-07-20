@@ -1,8 +1,73 @@
-h1{
-    color: red;
+/* Geral */
+body{
+    font-family: 'Roboto', sans-serif;
 }
-#container {
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-  }
+.container-fluid{
+    padding: 70px 0;
+}
+.row{
+    margin: 0;
+}
+p, li{
+    color: #0c0c0c;
+    font-size: 14px;
+}
+
+/* Sobre */
+#about-area{
+    background-color: #f2f3f4;
+}
+.main-title{
+    margin-bottom: 65px;
+    text-align: center;
+    font-size: 40px;
+    color: #0c0c0c;
+}
+.main-title::aft{
+    width: 100px;
+    border-bottom: solid 1px #000;
+    height: 1px;
+}
+#about-area h4{
+    color: #0c0c0c;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+#about-list{
+    list-style: none;
+    padding: 0;
+}
+#about-list i{
+    margin-right: 10px;
+    color: #00447c;
+}
+#about-list i:hover{
+    color: #0b7b9e;
+}
+#about-list li{
+    line-height: 30px;
+}
+
+/* Serviços */
+.services-box{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #212121;
+}
+.services-box i{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #212121;
+}
+.services-box h3{
+    margin-bottom: 10px;
+}
+.services-box:hover > i,
+.services-box:hover > h3{
+    color: #0b7b9e;
+    transition: all 0.5s ease-out;
+}
+.services-box i, .services-box h3{
+    transition: 1s;
+}
