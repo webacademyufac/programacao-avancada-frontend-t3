@@ -1,0 +1,142 @@
+/* Imports */
+@import "./variables.css";
+
+/* Geral */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+.row {
+    margin: 0;
+}
+
+p, li {
+    color: var(--color-2);
+    font-size: 14px;
+}
+
+/* NavBar */
+header, .navbar {
+    background-color: var(--color-1);
+}
+
+.navbar {
+    padding: .5rem 1rem;
+}
+.navbar-toggler-icon {
+    color: aliceblue;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand:hover {
+    color: var(--color-9);
+}
+
+#navbar-links a {
+    color: var(--color-9);
+    cursor: pointer;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+/* Sobre a Empresa */
+#about-area {
+    background-color: var(--color-9);
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 65px;
+    font-size: 40px;
+    color: var(--color-2);
+    position: relative;
+}
+
+.main-title::after {
+    content: "";
+    border-top: 2px solid var(--color-2);
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+#about-title {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#about-list {
+    list-style: none;
+    padding: 0;
+}
+
+#about-list i {
+    color: var(--color-5);
+    margin-right: 15px;
+}
+
+#about-list li {
+    line-height: 30px;
+}
+
+/* Serviços da empresa */
+.service-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-box i, .service-box h4 {
+    transition: .4s;
+}
+
+.service-box:hover > i, .service-box:hover > h4 {
+    color: var(--color-5);
+}
+
+.service-box i {
+    color: var(--color-2);
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.service-box h4 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/* Dados da empresa */
+.circle-box div {
+    padding: 0 40px;
+}
+  
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+}
+  
+  #data-area p {
+    color: var(--color-9);
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
