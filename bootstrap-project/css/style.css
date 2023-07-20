@@ -15,9 +15,49 @@ body {
 }
 
 p, li {
+    color: var(--color-2);
     font-size: 14px;
 }
 
+/* NavBar */
+header, .navbar {
+    background-color: var(--color-1);
+}
+
+.navbar {
+    padding: .5rem 1rem;
+}
+.navbar-toggler-icon {
+    color: aliceblue;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand:hover {
+    color: var(--color-9);
+}
+
+#navbar-links a {
+    color: var(--color-9);
+    cursor: pointer;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+/* Sobre a Empresa */
 #about-area {
     background-color: var(--color-9);
 }
@@ -39,7 +79,6 @@ p, li {
     left: 42.5%;
 }
 
-/* Sobre a Empresa */
 #about-title {
     text-transform: uppercase;
     font-size: 17px;
@@ -83,4 +122,21 @@ p, li {
 .service-box h4 {
     font-weight: 400;
     margin-bottom: 15px;
+}
+
+/* Dados da empresa */
+.circle-box div {
+    padding: 0 40px;
+}
+  
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+}
+  
+  #data-area p {
+    color: var(--color-9);
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
 }
