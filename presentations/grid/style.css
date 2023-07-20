@@ -1,0 +1,52 @@
+/* Tira o padding e Margin padrão do body (Sempre recomendado fazer isso em projetos front-end).
+   Coloca tamanho do body como 100vh, ou seja, 100% da altura da tela que está sendo usada. 
+   Grid-template-rows vai setar quantas linhas terá o elemento grid, e cada valor será o tamanho dessa linha. Fr é utilizado para dividir igualmente essas linhas, por exemplo, caso fosse grid-template-rows: 1fr 1fr 1fr, a divisão seria em 3 linhas iguais em tamanho.*/
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+}
+/* Com isso apenas adiconei as cores nas divs, e adicionei colunas nas divs que precisavam (A explicação do template-columns é a mesma do template-rows acima, mas com colunas dessa vez) */
+.first-div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.first-div .first-div-1 {
+    background-color: yellow;
+}
+
+.first-div .first-div-2 {
+    background-color: orange;
+}
+
+.second-div {
+    background-color: red;
+}
+
+.third-div {
+    background-color: rgba(165, 42, 42, 0.753);
+}
+
+.fourth-div {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.fourth-div-1 {
+    background-color: blue;
+}
+
+.fourth-div-2 {
+    background-color: green;
+}
+
+.fourth-div-3 {
+    background-color: purple;
+}
+
+.fifth-div {
+    background-color: grey;
+}
