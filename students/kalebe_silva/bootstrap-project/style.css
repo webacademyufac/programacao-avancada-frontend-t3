@@ -38,6 +38,14 @@ p, li {
 
 
 }
+.main-title:after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 3px;
+  background: #0c0c0c;
+  margin: 10px auto;
+}
 
 #about-title{
 
