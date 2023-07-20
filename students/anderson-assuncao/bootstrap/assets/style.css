@@ -1,4 +1,4 @@
-/* estilo gerais */
+/* estilo geral */
 
 body {
     font-family: 'Inter', sans-serif;
@@ -141,4 +141,28 @@ header, .navbar {
 #about-list i {
     color: #65daf9;
     margin-right: 15px;
+}
+
+/* estilo serviços */
+
+#services-area {
+    text-align: center;
+}
+
+.service-box {
+    margin-bottom: 50px;
+}
+
+.service-box i {
+    font-size: 36px;
+    color: #65daf9;
+    margin-bottom: 20px;
+}
+
+.service-box:hover > i, .service-box:hover > h3 {
+    color: red ;
+}
+
+.service-box i, .service-box h3 {
+    transition: 0.5s;
 }
