@@ -26,7 +26,7 @@ p, li {
 /* Sobre */
 
 #about-area{
-  background-color: antiquewhite;
+  background-color: rgb(248, 245, 242);
 
 }
 
@@ -47,9 +47,9 @@ p, li {
   margin: 10px auto;
 }
 
-#about-title{
+.title-uppercase{
 
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: bold;
 
 }
@@ -95,6 +95,39 @@ p, li {
 
 .service-box i, .service-box h3{
   transition: 1s;
+}
+
+/*Trabale connosco*/
+#apply-area{
+  height: 500px;
+}
+
+#apply-area .row, #apply-img, #apply-content{
+  height: 100%;
+}
+
+#apply-img{
+  background-image: url(./images/paralax.png);
+  background-size:cover;
+
+}
+#apply-content{
+  background-color: #0c0c0c;
+}
+#apply-content h4, #apply-content p{
+  color: white;
+}
+
+#apply-content h4{
+  margin-top: 20%;
+}
+
+.button-about-more {
+  content: " ";
+  background-color: aliceblue;
+  color: #0c0c0c;
+  transition: 1s;
+  border-radius: 50px;
 }
 
 
