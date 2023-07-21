@@ -30,7 +30,7 @@ p, li {
   color: #0f1026;
 }
 
-#about-title {
+.title-uppercase {
   color: #0f1026;
   text-transform: uppercase;
   font-weight: bold;
@@ -77,4 +77,37 @@ p, li {
   transition: 1s;
 }
 
+/* Time */
+
+#team-area {
+  margin-bottom: 65px;
+}
+
+/* Trabalhe conosco */
+
+#apply-area {
+  height: 500px;
+}
+
+#apply-area .row, #apply-img, #apply-content {
+  height: 100%;
+}
+
+#apply-img {
+  background-image: url('img/empresa.jpg');
+  background-size: cover;
+}
+
+#apply-content {
+  background-color: black;
+  padding: 0 5% 0 5%;
+}
+
+#apply-content h4, #apply-content p {
+  color: white;
+}
+
+#apply-content h4 {
+  margin-top: 15%;
+}
 
