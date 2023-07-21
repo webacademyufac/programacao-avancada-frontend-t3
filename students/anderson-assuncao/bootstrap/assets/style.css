@@ -218,11 +218,10 @@ header, .navbar {
     background-image: url('./img/empresa.jpg');
     background-size: cover;
     height: 100%;
-    margin-top: 5px;
 }
 
 #pattern-img h4, #pattern-img p {
-    color: #292929;
+    color: #e6e6e6;
 }
 
 #pattern-img h4{
