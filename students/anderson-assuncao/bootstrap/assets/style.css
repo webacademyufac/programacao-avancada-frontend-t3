@@ -203,38 +203,38 @@ header, .navbar {
 
 #apply-area {
     height: 500px;
-}
-
-#apply-area .container-fluid, #apply-area .row {
+  }
+  
+  #apply-area .container-fluid, #apply-area .row {
     height: 100%;
-}
-
-#apply-area .apply-box {
-    text-align: center;
+  }
+  
+  #apply-area .apply-box {
     padding: 70px 50px;
-}
-
-#company-img {
-    background-image: url('./img/empresa.jpg');
+    text-align: center;
+  }
+  
+  #company-img {
+    background-image: url('/assets/img/empresa.jpg');
     background-size: cover;
     height: 100%;
-}
-
-#pattern-img h4, #pattern-img p {
-    color: #e6e6e6;
-}
-
-#pattern-img h4{
-    margin-top: 10%;
+  }
+  
+  #pattern-img h4, #pattern-img p {
+    color: #FFF;
+  }
+  
+  #pattern-img h4 {
+    margin-top: 8%;
     margin-bottom: 20px;
     text-transform: uppercase;
-}
-
-#pattern-img p {
+  }
+  
+  #pattern-img p {
     margin-bottom: 20px;
-}
-
-#apply-btn {
+  }
+  
+  #apply-btn {
     display: block;
     height: auto;
     width: 180px;
@@ -242,10 +242,40 @@ header, .navbar {
     margin-right: auto;
     margin-top: 30px;
     background-color: transparent;
-    border-color: #fff;
+    border-color: #FFF;
+  }
+  
+  #apply-btn:hover {
+    border-color: #65DAF9;
+    background-color: #65DAF9;
+  }
+  
+
+  /* projetos area */
+
+.project-box {
+    margin-bottom: 30px;
 }
 
-#apply-btn:hover {
-    border-color: #272643;
+#filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#portfolio-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+    color: #f9f9f9;
     background-color: #2c698d;
+    border-color: #272643;
 }
