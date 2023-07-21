@@ -1,3 +1,12 @@
+:root {
+    --roxo: #272643;
+    --branco: #ffffff;
+    --azulclaro: #e3f6f5;
+    --azulclaro2: #bae8e8;
+    --azulescuro: #2c698d;
+
+}
+
 /* estilo geral */
 
 body {
@@ -13,7 +22,7 @@ body {
 }
 
 p, li {
-    color: #444;
+    color: #272643;
     font-size: 14px;
 }
 
@@ -21,7 +30,7 @@ p, li {
 /* estilo navbar */
 
 header, .navbar {
-    background-color: #353d41;
+    background-color: var(--roxo);
 }
 
 #nav-container {
@@ -35,15 +44,15 @@ header, .navbar {
 
 .navbar-brand {
     padding: 0;
-    color: #f5f5f5;
+    color: var(--azulclaro);
 }
 
 .navbar-brand:hover {
-    color: #f5f5f5;
+    color: var(--azulclaro);
 }
 
 #navbar-links a {
-    color: #f5f5f5;
+    color: var(--azulclaro);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -73,12 +82,12 @@ header, .navbar {
    font-size: 22px;
    font-weight: 300;
    margin-bottom: 100px;
-   color: #f5f5f5;
+   color: var(--branco);
 }
 
 .main-btn {
-    background-color: #65daf9;
-    color: #f5f5f5;
+    background-color: #272643;
+    color: var(--branco);
     text-transform: uppercase;
     width: 200px;
     height: 60px;
@@ -90,13 +99,13 @@ header, .navbar {
 
 .main-btn:hover {
     text-decoration: none;
-    color: #f5f5f5;
+    color: var(--branco);
     background-color: transparent;
-    border-color: #65daf9;
+    border-color: var(--roxo);
 }
 
 .carousel-indicators .active {
-    background-color: #65daf9;
+    background-color: var(--roxo);
 }
 
 
@@ -107,7 +116,7 @@ header, .navbar {
 }
 
 .main-title {
-    color: #444;
+    color: #272643;
     margin: 0 0 65px 0;
     font-size: 40px;
     text-align: center;
@@ -115,7 +124,7 @@ header, .navbar {
 
 .main-title::after {
     content: "";
-    border-top: 2px solid #333;
+    border-top: 2px solid #272643;
     width: 15%;
     position: absolute;
     top: 60px;
@@ -124,7 +133,7 @@ header, .navbar {
 
 .about-title {
     font-size: 17px;
-    color: #444;
+    color: #272643;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -139,7 +148,7 @@ header, .navbar {
 }
 
 #about-list i {
-    color: #65daf9;
+    color: var(--azulescuro);
     margin-right: 15px;
 }
 
@@ -155,14 +164,89 @@ header, .navbar {
 
 .service-box i {
     font-size: 36px;
-    color: #65daf9;
+    color: var(--azulescuro);
     margin-bottom: 20px;
 }
 
 .service-box:hover > i, .service-box:hover > h3 {
-    color: red ;
+    color: #272643 ;
 }
 
 .service-box i, .service-box h3 {
     transition: 0.5s;
+}
+
+/* estilo dados area */
+
+.circle-box div {
+    padding: 0 40px;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#data-area p {
+    color: #f9f9f9;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+
+/* estilo time area */
+
+
+
+/* estilo apply area */
+
+#apply-area {
+    height: 500px;
+}
+
+#apply-area .container-fluid, #apply-area .row {
+    height: 100%;
+}
+
+#apply-area .apply-box {
+    text-align: center;
+    padding: 70px 50px;
+}
+
+#company-img {
+    background-image: url('./img/empresa.jpg');
+    background-size: cover;
+    height: 100%;
+    margin-top: 5px;
+}
+
+#pattern-img h4, #pattern-img p {
+    color: #292929;
+}
+
+#pattern-img h4{
+    margin-top: 10%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#pattern-img p {
+    margin-bottom: 20px;
+}
+
+#apply-btn {
+    display: block;
+    height: auto;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+#apply-btn:hover {
+    border-color: #272643;
+    background-color: #2c698d;
 }
