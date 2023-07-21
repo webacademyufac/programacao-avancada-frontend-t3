@@ -69,11 +69,53 @@
         <!-- Slide Show -->
         <div class="container-fluid">
             <section id="mainSlider" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
-                    <li data-target="#mainSlider" data-slide-to="1"></li>
-                    <li data-target="#mainSlider" data-slide-to="2"></li>
-                </ol>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./img/banner1.png" alt="Projetos de e-commerce">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Quer criar um e-commerce?</h2>
+                            <p>Conte conosco, temos mais de 30 lojas de portfólio.</p>
+                            <a href="#" class="main-btn">Ver portfólio</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/banner2.png" alt="Projetos de e-commerce">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Quer criar um e-commerce?</h2>
+                            <p>Conte conosco, temos mais de 30 lojas de portfólio.</p>
+                            <a href="#" class="main-btn">Ver portfólio</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/banner3.png" alt="Projetos de e-commerce">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Quer criar um e-commerce?</h2>
+                            <p>Conte conosco, temos mais de 30 lojas de portfólio.</p>
+                            <a href="#" class="main-btn">Ver portfólio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </section>
         </div>
 
@@ -173,6 +215,80 @@
                 </div>
             </div>
         </section>
+
+        <!-- Time -->
+        <section id="team-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="main-title">Nosso time</h2>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/profile1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Pessoa 1</h5>
+                                <p class="card-text">Profissão</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/profile2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Pessoa 2</h5>
+                                <p class="card-text">Profissão</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/profile3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Pessoa 3</h5>
+                                <p class="card-text">Profissão</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="img/profile4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Pessoa 4</h5>
+                                <p class="card-text">Profissão</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid">
+            <section id="apply-area">
+                <div class="row">
+                    <div id="apply-img" class="col-md-6 apply-box"></div>
+                    <div id="pattern-img" class="col-md-6 apply-box">
+                        <h4>Gosta de desafios?</h4>
+
+                        <p>Temos várias posições abertas, entre elas: Software Engineer, UI/UX Designer, Project Manager
+                            e mais.</p>
+                        <p>Clique no botão abaixo e confira os benefícios e as posições em aberto.</p>
+                        <p>Aqui você terá a chance de trabalhar com as melhores tecnologias e os profissionais mais
+                            capacitados.</p>
+
+                        <button id="apply-btn" class="btn btn-primary">Saiba mais</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio-area">
+                <!-- <div class="container"></div> -->
+            </section>
+        </div>
 
     </main>
 

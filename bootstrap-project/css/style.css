@@ -10,6 +10,10 @@ body {
     padding: 70px 0;
 }
 
+.container-fluid {
+    padding: 0;
+}
+
 .row {
     margin: 0;
 }
@@ -55,6 +59,51 @@ header, .navbar {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 1rem .8rem;
+}
+
+/* Slide Show */
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: var(--color-9);
+}
+
+.main-btn {
+    background-color: var(--color-5);
+    color: var(--color-9);
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 3px solid transparent;
+    transition: .5s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-btn:hover {
+    background-color: transparent;
+    border: 3px solid var(--color-5);
+}
+
+.carousel-indicators .active {
+    background-color: var(--color-5);
 }
 
 /* Sobre a Empresa */
@@ -134,9 +183,62 @@ header, .navbar {
     font-size: 32px;
 }
   
-  #data-area p {
+#data-area p {
     color: var(--color-9);
     text-align: center;
     font-size: 26px;
     margin-top: 20px;
+}
+
+/* Time */
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Trabalhe conosco */
+#apply-area .apply-box {
+    padding: 70px 50px;
+    text-align: center;
+    background-color: black;
+    color: var(--color-9);
+}
+
+#apply-area .apply-box p {
+    color: var(--color-9);
+}   
+
+#apply-img {
+    background-image: url('../img/empresa.jpg');
+    background-size: cover;
+}
+
+#apply-btn {
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 10px;
+    width: 180px;
+    border: 3px solid var(--color-9);
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    transition: .5s;
+}
+
+#apply-btn:hover {
+    background-color: var(--color-5);
+    border: 3px solid var(--color-5);
+}
+
+#pattern-img h4 {
+    margin-top: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#pattern-img p {
+    margin-bottom: 20px;
 }
