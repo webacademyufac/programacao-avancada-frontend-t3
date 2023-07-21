@@ -122,13 +122,14 @@ p, li {
   margin-top: 20%;
 }
 
-.button-about-more {
-  content: " ";
-  background-color: aliceblue;
-  color: #0c0c0c;
-  transition: 1s;
+.button-about-more{
   border-radius: 50px;
 }
 
+.button-about-more{
+  content: '';
+  background-color: aliceblue;
+  color: #0c0c0c;
+}
 
 /*usar o after, e configurar a font */
