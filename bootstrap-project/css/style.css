@@ -29,7 +29,7 @@ header, .navbar {
 }
 
 .navbar {
-    padding: .5rem 1rem;
+    padding: .5rem 1.2rem;
 }
 .navbar-toggler-icon {
     color: aliceblue;
@@ -41,7 +41,7 @@ header, .navbar {
 }
 
 #logo {
-    width: 75px;
+    width: 85px;
 }
 
 .navbar-brand {
@@ -79,7 +79,7 @@ header, .navbar {
 #mainSlider .carousel-caption p {
     font-size: 22px;
     font-weight: 300;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     color: var(--color-9);
 }
 
@@ -115,7 +115,8 @@ header, .navbar {
     text-align: center;
     margin-bottom: 65px;
     font-size: 40px;
-    color: var(--color-2);
+    color: var(--color-1);
+    font-weight: 400;
     position: relative;
 }
 
@@ -203,7 +204,6 @@ header, .navbar {
 #apply-area .apply-box {
     padding: 70px 50px;
     text-align: center;
-    background-color: black;
     color: var(--color-9);
 }
 
