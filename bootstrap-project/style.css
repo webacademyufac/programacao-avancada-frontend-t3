@@ -91,7 +91,6 @@ p, li{
     background-size: cover;
 }
 #apply-content{
-    background-color: #000;
     padding: 0 5%;
 }
 #apply-content h4, #apply-content p{
@@ -110,4 +109,17 @@ p, li{
     background-color: #00447c;
     border: solid #00447c;
     
+}
+/* Dados */
+#data-area{
+  
+}
+#data-area p{
+    font-size: 20px;
+    color: #fff;
+}
+#circleA {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
 }
