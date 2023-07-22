@@ -9,7 +9,7 @@ createCirclesUsingArrays(htmlIdArray, circleInternSizeNumber);
 function createCirclesUsingArrays(htmlIdArray, circleInternSizeNumber) {
     for (let i = 0; i < htmlIdArray.length; i++) {
       activeCircle(
-        generateCircle(returnElementId(htmlIdArray[i]), circleInternSizeNumber[i])
+        returnNewProgressBarObj(returnHtmlElementId(htmlIdArray[i]), circleInternSizeNumber[i])
       );
     }
 }
@@ -20,7 +20,7 @@ function activeCircle(loader) {
     loader.animate(1.0); // Number from 0.0 to 1.0
   }
   
-function generateCircle(circleName, internSize) {
+function returnNewProgressBarObj(circleName, internSize) {
   return new ProgressBar.Circle(circleName, returnCircleObj(internSize));
 }
 
@@ -52,7 +52,7 @@ function returnCircleObj(internSize){
           }}   
 }    
 
-function returnElementId(name) {
+function returnHtmlElementId(name) {
   return document.getElementById(name);
 }
 
