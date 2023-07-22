@@ -14,10 +14,10 @@ function createCirclesUsingArrays(htmlIdArray, circleInternSizeNumber) {
     }
 }
 
-function activeCircle(loader) {
-    loader.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-    loader.text.style.fontSize = "2rem";
-    loader.animate(1.0); // Number from 0.0 to 1.0
+function activeCircle(progressBar) {
+    progressBar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+    progressBar.text.style.fontSize = "2rem";
+    progressBar.animate(1.0); // Number from 0.0 to 1.0
   }
   
 function returnNewProgressBarObj(circleName, internSize) {
