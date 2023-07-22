@@ -103,37 +103,34 @@ p, li {
   color: white ;
 }
 
-#data-area {
-  background-color: black;
-}
 
 #circleA {
   margin: 20px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   position: relative;
   
 }
 #circleB {
   margin: 20px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   position: relative;
   
 }
 
 #circleC {
   margin: 20px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   position: relative;
   
 }
 
 #circleD {
   margin: 20px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   position: relative;
   
 }
@@ -152,13 +149,10 @@ p, li {
 }
 
 #apply-img{
-  background-image: url(./images/paralax.png);
   background-size:cover;
 
 }
-#apply-content{
-  background-color: #0c0c0c;
-}
+
 #apply-content h4, #apply-content p{
   color: white;
 }
