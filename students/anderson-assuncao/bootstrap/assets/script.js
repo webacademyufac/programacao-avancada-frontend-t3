@@ -2,14 +2,14 @@ $(document).ready(function() {
     let containerA = document.getElementById("circleA")
 
     let circleA = new ProgressBar.Circle(containerA, {
-        color: '#e3f6f5',
+        color: '#f5f5f5',
         strokeWidth: 8,
         duration: 1400,
         from: {
-            color: '#272643',
+            color: '#a86a0c',
         },
         to: {
-            color: '#2c698d'
+            color: '#e18a09'
         },
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color)
@@ -23,14 +23,14 @@ $(document).ready(function() {
     let containerB = document.getElementById("circleB");
 
     let circleB = new ProgressBar.Circle(containerB, {
-        color: '#e3f6f5',
+        color: '#f5f5f5',
         strokeWidth: 8,
         duration: 1400,
         from: {
-            color: '#272643',
+            color: '#a86a0c',
         },
         to: {
-            color: '#2c698d'
+            color: '#e18a09'
         },
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color)
@@ -44,14 +44,14 @@ $(document).ready(function() {
     let containerC = document.getElementById("circleC")
 
     let circleC = new ProgressBar.Circle(containerC, {
-        color: '#e3f6f5',
+        color: '#f5f5f5',
         strokeWidth: 8,
         duration: 1400,
         from: {
-            color: '#272643',
+            color: '#a86a0c',
         },
         to: {
-            color: '#2c698d'
+            color: '#e18a09'
         },
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color)
@@ -65,14 +65,14 @@ $(document).ready(function() {
     let containerD = document.getElementById("circleD");
 
     let circleD = new ProgressBar.Circle(containerD, {
-        color: '#e3f6f5',
+        color: '#f5f5f5',
         strokeWidth: 8,
         duration: 1400,
         from: {
-            color: '#272643',
+            color: '#a86a0c',
         },
         to: {
-            color: '#2c698d'
+            color: '#e18a09'
         },
         step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color)
@@ -108,7 +108,7 @@ $(document).ready(function() {
     setInterval(function(){
         $('#data-area').parallax({imageSrc: './assets/img/cidadeparallax.png'})
         $('#apply-area').parallax({imageSrc: './assets/img/pattern.png'})
-    },500)
+    }, 500)
 
 
     //filtro projetos

@@ -1,10 +1,10 @@
 :root {
-    --roxo: #272643;
-    --branco: #ffffff;
-    --azulclaro: #e3f6f5;
-    --azulclaro2: #bae8e8;
-    --azulescuro: #2c698d;
-
+    --cinza: #444;
+    --cinzaclaro: rgb(178, 178, 178);
+    --cinzaescuro: #242424;
+    --laranja: #a86a0c;
+    --laranjaclaro: #e18a09;
+    --offwhite: #f5f5f5;
 }
 
 /* estilo geral */
@@ -22,7 +22,7 @@ body {
 }
 
 p, li {
-    color: #272643;
+    color: var(--offwhite);
     font-size: 14px;
 }
 
@@ -30,7 +30,7 @@ p, li {
 /* estilo navbar */
 
 header, .navbar {
-    background-color: var(--roxo);
+    background-color: var(--cinzaescuro);
 }
 
 #nav-container {
@@ -44,15 +44,15 @@ header, .navbar {
 
 .navbar-brand {
     padding: 0;
-    color: var(--azulclaro);
+    color: var(--offwhite);
 }
 
 .navbar-brand:hover {
-    color: var(--azulclaro);
+    color: var(--offwhite);
 }
 
 #navbar-links a {
-    color: var(--azulclaro);
+    color: var(--offwhite);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -82,12 +82,12 @@ header, .navbar {
    font-size: 22px;
    font-weight: 300;
    margin-bottom: 100px;
-   color: var(--branco);
+   color: var(--offwhite);
 }
 
 .main-btn {
-    background-color: #272643;
-    color: var(--branco);
+    background-color: var(--laranja);
+    color: var(--offwhite);
     text-transform: uppercase;
     width: 200px;
     height: 60px;
@@ -99,24 +99,25 @@ header, .navbar {
 
 .main-btn:hover {
     text-decoration: none;
-    color: var(--branco);
+    color: var(--offwhite);
     background-color: transparent;
-    border-color: var(--roxo);
+    border-color: var(--laranja);
 }
 
 .carousel-indicators .active {
-    background-color: var(--roxo);
+    background-color: var(--laranja);
 }
 
 
 /* estilo about agency */
 
-#about-area {
-    background-color: #f9f9f9;
+
+#about-area p {
+    color: var(--cinzaescuro);
 }
 
 .main-title {
-    color: #272643;
+    color: var(--cinzaescuro);
     margin: 0 0 65px 0;
     font-size: 40px;
     text-align: center;
@@ -124,7 +125,7 @@ header, .navbar {
 
 .main-title::after {
     content: "";
-    border-top: 2px solid #272643;
+    border-top: 2px solid var(--laranja);
     width: 15%;
     position: absolute;
     top: 60px;
@@ -133,7 +134,7 @@ header, .navbar {
 
 .about-title {
     font-size: 17px;
-    color: #272643;
+    color: var(--cinzaescuro);
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -141,14 +142,16 @@ header, .navbar {
 #about-list {
     list-style: none;
     padding-left: 0;
+    color: var(--cinzaescuro);
 }
 
 #about-list li {
+    color: var(--cinzaescuro);
     line-height: 30px;
 }
 
 #about-list i {
-    color: var(--azulescuro);
+    color: var(--laranja);
     margin-right: 15px;
 }
 
@@ -164,16 +167,20 @@ header, .navbar {
 
 .service-box i {
     font-size: 36px;
-    color: var(--azulescuro);
+    color: var(--cinzaescuro);
     margin-bottom: 20px;
 }
 
 .service-box:hover > i, .service-box:hover > h3 {
-    color: #272643 ;
+    color: var(--laranja) ;
 }
 
 .service-box i, .service-box h3 {
     transition: 0.5s;
+}
+
+#services-area p {
+    color: var(--cinzaescuro);
 }
 
 /* estilo dados area */
@@ -188,7 +195,7 @@ header, .navbar {
 }
 
 #data-area p {
-    color: #f9f9f9;
+    color: #f5f5f5;
     text-align: center;
     font-size: 26px;
     margin-top: 20px;
@@ -197,7 +204,9 @@ header, .navbar {
 
 /* estilo time area */
 
-
+#team-area .card-text {
+    color: var(--cinza);
+}
 
 /* estilo apply area */
 
@@ -242,12 +251,11 @@ header, .navbar {
     margin-right: auto;
     margin-top: 30px;
     background-color: transparent;
-    border-color: #FFF;
+    border-color: var(--cinzaescuro);
   }
   
   #apply-btn:hover {
-    border-color: #65DAF9;
-    background-color: #65DAF9;
+    background-color: var(--laranja);
   }
   
 
@@ -263,10 +271,10 @@ header, .navbar {
 }
 
 #portfolio-area .filter-btn {
-    color: #444;
-    border: 1px solid #444;
+    color: var(--cinza);
+    /* border: 1px solid var(--cinza); */
     background-color: transparent;
-    text-transform: none;
+    text-transform: uppercase;
     min-width: 100px;
     width: auto;
     height: 40px;
@@ -275,7 +283,7 @@ header, .navbar {
 }
 
 #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
-    color: #f9f9f9;
-    background-color: #2c698d;
-    border-color: #272643;
+    color: #f5f5f5;
+    background-color: var(--laranja);
+    /* border-color: var(--cinzaescuro); */
 }
