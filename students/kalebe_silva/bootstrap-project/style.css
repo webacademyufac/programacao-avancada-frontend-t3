@@ -97,6 +97,51 @@ p, li {
   transition: 1s;
 }
 
+/* Dados */
+#data-area p {
+  font-size: 20px ;
+  color: white ;
+}
+
+#data-area {
+  background-color: black;
+}
+
+#circleA {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  
+}
+#circleB {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  
+}
+
+#circleC {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  
+}
+
+#circleD {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  
+}
+
+
+
+
+
 /*Trabale connosco*/
 #apply-area{
   height: 500px;
