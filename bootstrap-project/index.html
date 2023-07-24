@@ -17,16 +17,21 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Scripts em JS -->
+    <!-- JS do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
+    
+    <!-- Loader - Progress Bar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
 
+    <!-- Parallax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <!-- Scripts em JS -->
     <script src="scripts.js" defer></script>
 
     <!-- Ícones - Font Awesome -->
     <script src="https://kit.fontawesome.com/6c57f270a1.js" crossorigin="anonymous"></script>
-
-    <!-- Loader - Progress Bar -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js"></script>
 
 </head>
 
@@ -49,7 +54,7 @@
                     <img class="img-fluid" src="img/agencia.jpg" alt="MVP Studio">
                 </div>
                 <div class="col-md-6">
-                    <h4 id="about-title">Lorem ipsum dolor sit amet</h4>
+                    <h4 class="title-uppercase">Lorem ipsum dolor sit amet</h4>
                     <p>Consectetur adipisicing elit.</p>
                     <p>Molestias aliquid sint dolores repellendus voluptate.</p>
                     <p>Id labore nobis minima, eveniet inventore iste nam.</p>
@@ -105,6 +110,87 @@
                 <i class="fa-solid fa-cash-register"></i>
                 <h3>Comércio eletrônico</h3>
                 <p>Eatione eaque architecto itaque eum aliquid.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dados -->
+    <div id="data-area" class="container-fluid">
+        <div class="row text-center">
+            <div class="col-md-3 col-xs-6 circle-box">
+                <div id="circleA"></div>
+                <p>Clientes felizes</p> 
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+                <div id="circleB"></div>
+                <p>Apps desenvolvidos</p> 
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+                <div id="circleC"></div>
+                <p>Desenvolvedores</p> 
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+                <div id="circleD"></div>
+                <p>Linhas de código escritas</p> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Time -->
+    <div id="team-area" class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="main-title">Nosso time</h2>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card text-center">
+                    <img src="img/profile1.jpg" class="card-img-top" alt="Nome de um colaborador">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card text-center">
+                    <img src="img/profile2.jpg" class="card-img-top" alt="Nome de um colaborador">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card text-center">
+                    <img src="img/profile3.jpg" class="card-img-top" alt="Nome de um colaborador">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card text-center">
+                    <img src="img/profile4.jpg" class="card-img-top" alt="Nome de um colaborador">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trabalhe conosco -->
+    <div id="apply-area" class="container-fluid">
+        <div class="row">
+            <div id="apply-img" class="col-md-6"></div>
+            <div id="apply-content" class="col-md-6 text-center">
+                <h4 class="title-uppercase mb-2">Gosta de desafios?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Itaque corrupti enim expedita, fugiat laboriosam dicta sit ipsum assumenda iusto facilis nostrum.</p>
+                <p>Error molestias tenetur perspiciatis exercitationem dolor amet deleniti mollitia!</p>
+                <a href="" class="btn btn-primary text-uppercase" role="button">Saiba mais</a>
             </div>
         </div>
     </div>
