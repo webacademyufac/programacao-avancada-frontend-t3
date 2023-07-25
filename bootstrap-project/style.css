@@ -145,8 +145,6 @@ li {
   align-items: center;
   background-image: url(img/cidadeparallax.png);
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
   margin-bottom: 1em;
 }
 #data-area p {
@@ -207,4 +205,32 @@ li {
   100% {
     stroke-dashoffset: 20;
   }
+}
+
+/* PROJECTS */
+#projects-buttons{
+  background-color: transparent;
+  margin-top: 1em;
+  justify-content: center;
+  align-items: center;
+}
+#projects-buttons a{
+  margin: 0 1em;
+  width: auto;
+}
+#projects-area{
+  padding: 1em;
+}
+#projects-area img{
+  margin-top: 1em;
+}
+
+/* NEWS LATTER */
+#newslatter input{
+  border-radius: 50px 0 0 50px;
+}
+#newslatter button{
+  border-radius: 0 50px 50px 0;
+  background-color: var(--laranja);
+  border: transparent;
 }
