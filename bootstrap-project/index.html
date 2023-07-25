@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MVP Studio</title>
 
-    <link rel="shortcut icon" href="./img/mvp-logo.svg">
+    <link rel="shortcut icon" href="./img/mvp-studio.svg">
 
     <!-- Fonte (Google Fonts)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,9 @@
     <!-- Progress Bar -->
     <script src="js/progressbar.min.js"></script>
 
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -29,9 +32,6 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
         defer></script>
     <script src="./js/scripts.js" defer></script>
-
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Parallax -->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
@@ -44,7 +44,7 @@
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
                 <a class="navbar-brand" href="./">
-                    <img id="logo" src="img/mvp-logo.svg" alt="MVP Studio Logo">
+                    <img id="logo" src="img/mvp-studio.svg" alt="MVP Studio Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
                     aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,18 +52,19 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" id="home-menu">Home</a>
-                        <a class="nav-item nav-link" id="about-menu">A agência</a>
-                        <a class="nav-item nav-link" id="services-menu">Serviços</a>
-                        <a class="nav-item nav-link" id="team-menu">Time</a>
-                        <a class="nav-item nav-link" id="portfolio-menu">Projetos</a>
-                        <a class="nav-item nav-link" id="contact-menu">Contato</a>
+                        <a class="nav-item nav-link" id="home-menu" href="#">Home</a>
+                        <a class="nav-item nav-link" id="about-menu" href="#">A agência</a>
+                        <a class="nav-item nav-link" id="services-menu" href="#">Serviços</a>
+                        <a class="nav-item nav-link" id="team-menu" href="#">Time</a>
+                        <a class="nav-item nav-link" id="portfolio-menu" href="#">Projetos</a>
+                        <a class="nav-item nav-link" id="contact-menu" href="#">Contato</a>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
 
+    <!-- Main -->
     <main>
         <!-- Slide Show -->
         <div class="container-fluid">
@@ -81,7 +82,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="./img/banner1.png" alt="Projetos de e-commerce">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-md-block">
                             <h2>Quer impulsionar seu negócio?</h2>
                             <p>Conte conosco, temos mais de 30 projetos de portfólio.</p>
                             <a href="#" class="main-btn">Ver portfólio</a>
@@ -100,7 +101,7 @@
 
                     <div class="carousel-item">
                         <img class="d-block w-100" src="./img/banner3.png" alt="Projetos de e-commerce">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-md-block">
                             <h2>Quer criar um e-commerce?</h2>
                             <p>Conte conosco, temos mais de 30 lojas de portfólio.</p>
                             <a href="#" class="main-btn">Ver portfólio</a>
@@ -131,13 +132,15 @@
                     <div class="col-md-6">
                         <h3 id="about-title">Uma agência que pensa no futuro</h3>
                         <p>Nossos projetos são adaptados ao cliente e seu propósito.</p>
-                        <p>Após a especificação do projetos os arquitetos de software definirão as melhores tecnologias
+                        <p>Após a especificação do projetos os arquitetos de software definirão as melhores
+                            tecnologias
                             para seu projeto.</p>
                         <p>E nossos designers trabalharão na sua interface/layout para impulsionar o negócio.</p>
                         <p>Veja outros diferenciais:</p>
                         <ul id="about-list" class="list-unstyled">
                             <li><i class="fa-solid fa-check"></i>Desenvolvimento utilizando metodologias ágeis</li>
-                            <li><i class="fa-solid fa-check"></i>Layouts responsivos para todos os tipos de telas</li>
+                            <li><i class="fa-solid fa-check"></i>Layouts responsivos para todos os tipos de telas
+                            </li>
                             <li><i class="fa-solid fa-check"></i>Utilização de Inteligências Artificiais</li>
                             <li><i class="fa-solid fa-check"></i>Funcionários experientes e competentes</li>
                         </ul>
@@ -194,7 +197,7 @@
                 <div class="row">
                     <div class="col-md-3 circle-box">
                         <div id="circleA"></div>
-                        <p>Projetos entregues</p>
+                        <p>Softwares Desenvolvidos</p>
                     </div>
 
                     <div class="col-md-3 circle-box">
@@ -209,7 +212,7 @@
 
                     <div class="col-md-3 circle-box">
                         <div id="circleD"></div>
-                        <p>Cafézinhos</p>
+                        <p>Linhas de código escritas</p>
                     </div>
                 </div>
             </div>
@@ -296,7 +299,24 @@
                         <button class="main-btn filter-btn" id="dsg-btn">Design</button>
                         <button class="main-btn filter-btn" id="seo-btn">SEO</button>
                     </div>
-                    <div class="col-md-4 project-box dev"></div>
+                    <div class="col-md-4 project-box dev">
+                        <img src="./img/proj1.jpg" class="img-fluid" alt="Projeto 1">
+                    </div>
+                    <div class="col-md-4 project-box dsg">
+                        <img src="./img/proj2.jpg" class="img-fluid" alt="Projeto 2">
+                    </div>
+                    <div class="col-md-4 project-box seo">
+                        <img src="./img/proj3.jpg" class="img-fluid" alt="Projeto 3">
+                    </div>
+                    <div class="col-md-4 project-box dev">
+                        <img src="./img/proj4.jpg" class="img-fluid" alt="Projeto 4">
+                    </div>
+                    <div class="col-md-4 project-box dsg">
+                        <img src="./img/proj5.jpg" class="img-fluid" alt="Projeto 5">
+                    </div>
+                    <div class="col-md-4 project-box seo">
+                        <img src="./img/proj6.jpg" class="img-fluid" alt="Projeto 6">
+                    </div>
                 </div>
             </div>
         </section>
@@ -304,6 +324,53 @@
     </main>
 
     <!-- Footer -->
+    <footer>
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Entre em contato conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <p><span class="contact-title">Ligue para: </span> (68) 00000-0000</p>
+                        <p><span class="contact-title">Horários: </span> 8:00 - 19:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p><span class="contact-title">Envie um e-mail: </span> mvpstudio@gmail.com.br</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p><span class="contact-title">Venha falar conosco: </span> Rua Lorem Ipsum - 0009</p>
+                    </div>
+
+                    <div id="msg-box" class="col-md-6">
+                        <p>Ou nos deixe uma mensagem: </p>
+                    </div>
+                    <div id="contact-form" class="col-md-6">
+                        <form>
+                            <input type="email" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" rows="3" placeholder="Sua mensagem..."
+                                name="message"></textarea>
+                            <input type="submit" class="main-btn" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por: <a href="#" target="_blank">Ricardo Costa da Silva </a>&copy; 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

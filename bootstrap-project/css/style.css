@@ -25,7 +25,7 @@ p, li {
 
 /* NavBar */
 header, .navbar {
-    background-color: var(--color-1);
+    background-color: var(--color-2);
 }
 
 .navbar {
@@ -109,6 +109,7 @@ header, .navbar {
 /* Sobre a Empresa */
 #about-area {
     background-color: var(--color-9);
+    box-shadow: inset 0px -120px #fff, inset 0px -120px #fff;
 }
 
 .main-title {
@@ -242,3 +243,248 @@ header, .navbar {
 #pattern-img p {
     margin-bottom: 20px;
 }
+
+/* Portfólio */
+.project-box {
+    margin-bottom: 30px;
+}
+
+#filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#portfolio-area .filter-btn {
+    color: var(--color-2);
+    border: 1px solid var(--color-2);
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+    color: var(--color-9);
+    background-color: var(--color-5);
+    border-color: var(--color-5);
+}
+
+/* Footer */
+#contact-area {
+    text-align: center;
+}
+
+.contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--color-5);
+}
+
+.contact-box i {
+    color: #444;
+    border: solid 1px var(--color-2);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    font-size: 16px;
+}
+
+.contact-title {
+    font-weight: bold;
+    color: var(--color-5);
+}
+
+#msg-box p {
+    font-size: 22px;
+}
+
+#contact-form input[type="text"],#contact-form input[type="email"], #contact-form textarea {
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+#contact-form .main-btn {
+    width: 120px;
+    height: 50px;
+}
+
+#contact-form .main-btn:hover {
+    color: var(--color-5);
+}
+
+/* Copy */
+
+#copy-area {
+    background-color: var(--color-9);
+}
+
+#copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copy-area .container p {
+    margin-bottom: 0;
+}
+
+#copy-area .container a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+#copy-area .container a:hover {
+    color: var(--color-5);
+}
+
+/* Responsividade */
+@media(max-width: 1200px) {
+    #about-area {
+        box-shadow: none
+    }
+}
+
+@media(max-width: 768px) {
+  
+    /* geral */
+    .container {
+      padding: 20px 0;
+    }
+    
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+      height: auto;
+    }
+  
+    #mainSlider .carousel-caption h2 {
+      font-size: 28px;
+    }
+  
+    #mainSlider .carousel-caption p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  
+    .carousel-caption {
+      left: 10%;
+      right: 10%;
+    }
+    
+    /* Sobre */
+    #about-area img {
+      margin-top: 10px;
+    }
+
+    #about-title {
+        margin-top: 20px;
+    }
+    
+    /* data */
+    .circle-box div {
+      padding: 0 10px;
+    }
+  
+    #data-area p {
+      font-size: 16px;
+    }
+    
+    /* Time */
+    .card-title {
+      font-size: 14px;
+    }
+  
+    .card-text {
+      font-size: 12px;
+    }
+  
+    /* apply */
+    #apply-area .apply-box {
+      padding: 50px 25px;
+    }
+
+    #apply-img {
+        display: none;
+    }
+  }
+  
+  
+  @media(max-width: 425px) {
+  
+    /* slider */
+    #mainSlider {
+      margin-top: 90px;
+    }
+  
+    #mainSlider .carousel-caption {
+      top: 5%;
+    }
+  
+    #mainSlider .carousel-caption h2 {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  
+    #mainSlider .carousel-caption p {
+      display: none;
+    }
+  
+    .carousel-caption .main-btn {
+      
+      font-size: 14px;
+    }
+  
+    /* Sobre */
+    .main-title {
+      font-size: 30px;
+    }
+  
+    #about-area img {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+  
+    /* data */
+    .circle-box {
+      width: 50%;
+    }
+  
+    #team-area .col-md-3 {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  
+    /* apply */
+    #apply-area {
+      height: auto;
+    }
+  
+    #company-img {
+      display: none;
+    }
+  
+    /* filter */
+    #portfolio-area .filter-btn {
+      margin-bottom: 20px;
+    }
+  
+    .project-box {
+      width: 50%;
+    }
+  
+    /* contact */
+    .contact-box {
+      border: none;
+      margin-bottom: 0;
+    }
+  
+  }
