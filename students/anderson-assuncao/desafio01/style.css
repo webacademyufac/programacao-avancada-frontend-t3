@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+div {
+    border: 2px solid black;
+}
+
+.amarelo {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: yellow;
+    height: 157.5px;
+}
+
+.laranja {
+    grid-area: 1 / 2 / 2 / 4;
+    background-color: orange;
+}
+
+.vermelho {
+    grid-area: 2 / 1 / 3 / 4;
+    background-color: red;
+}
+
+.marrom {
+    grid-area: 3 / 1 / 5 / 4;
+    background-color: rgb(153, 91, 10);
+}
+
+.azul {
+    grid-area: 5 / 1 / 6 / 2;
+    background-color: blue;
+}
+
+.verde {
+    grid-area: 5 / 2 / 6 / 3;
+    background-color: green;
+}
+
+.rosa {
+    grid-area: 5 / 3 / 6 / 4;
+    background-color: pink;
+}
+
+.cinza {
+    grid-area: 6 / 1 / 7 / 4;
+    background-color: grey;
+}
