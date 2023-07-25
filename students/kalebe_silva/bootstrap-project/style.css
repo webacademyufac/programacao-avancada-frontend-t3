@@ -150,6 +150,7 @@ p, li {
 
 #apply-img{
   background-size:cover;
+  background-image: url("./images/empresa.jpg");
 
 }
 
@@ -171,4 +172,13 @@ p, li {
   color: #0c0c0c;
 }
 
+/*Team area*/
+
+#team-area{
+  margin: 0px 0px 40px 0px;
+}
+
+#card{
+  margin: 20px;
+}
 /*usar o after, e configurar a font */

@@ -64,7 +64,7 @@ function returnHtmlElementId(name) {
 /*Paralax */
 
 let arrayIdForUseParallax = ["data-area", "apply-content"];
-let arrayImagesForParalax =["images/background-paralax.png","images/paralax.png"];
+let arrayImagesForParalax =["images/cidadeparallax.png","images/pattern.png"];
 
 
 function generateParalax(){
