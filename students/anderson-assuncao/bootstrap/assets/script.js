@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    let containerA = document.getElementById("circleA")
+    let circle1 = document.getElementById("circleA")
 
-    let circleA = new ProgressBar.Circle(containerA, {
+    let circleA = new ProgressBar.Circle(circle1, {
         color: '#f5f5f5',
         strokeWidth: 8,
         duration: 1400,
@@ -20,9 +20,9 @@ $(document).ready(function() {
         }
     })
 
-    let containerB = document.getElementById("circleB");
+    let circle2 = document.getElementById("circleB");
 
-    let circleB = new ProgressBar.Circle(containerB, {
+    let circleB = new ProgressBar.Circle(circle2, {
         color: '#f5f5f5',
         strokeWidth: 8,
         duration: 1400,
@@ -41,9 +41,9 @@ $(document).ready(function() {
         }
     })
 
-    let containerC = document.getElementById("circleC")
+    let circle3 = document.getElementById("circleC")
 
-    let circleC = new ProgressBar.Circle(containerC, {
+    let circleC = new ProgressBar.Circle(circle3, {
         color: '#f5f5f5',
         strokeWidth: 8,
         duration: 1400,
@@ -62,9 +62,9 @@ $(document).ready(function() {
         }
     })
 
-    let containerD = document.getElementById("circleD");
+    let circle4 = document.getElementById("circleD");
 
-    let circleD = new ProgressBar.Circle(containerD, {
+    let circleD = new ProgressBar.Circle(circle4, {
         color: '#f5f5f5',
         strokeWidth: 8,
         duration: 1400,
@@ -83,6 +83,12 @@ $(document).ready(function() {
 
     })
 
+    //parallax 
+    setInterval(function(){
+        $('#data-area').parallax({imageSrc: './assets/img/cidadeparallax.png'})
+        $('#apply-area').parallax({imageSrc: './assets/img/pattern.png'})
+    }, 500)
+    
 
     // iniciar loading quando user chegar na sessão
 
@@ -102,14 +108,6 @@ $(document).ready(function() {
 
         }
     })
-
-
-    //parallax 
-    setInterval(function(){
-        $('#data-area').parallax({imageSrc: './assets/img/cidadeparallax.png'})
-        $('#apply-area').parallax({imageSrc: './assets/img/pattern.png'})
-    }, 500)
-
 
     //filtro projetos
     $('.filter-btn').on('click', function() {
