@@ -2,9 +2,14 @@
 // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
 
 htmlIdArray = ["circleA", "circleB", "circleC", "circleD"];
-circleInternSizeNumber = [27, 66, 4, 22, 60];
+circleInternSizeNumber = [4449, 46665, 44, 22, 60,434];
 
-createCirclesUsingArrays(htmlIdArray, circleInternSizeNumber);
+//if(returnHtmlElementId("card-five").offsetWidth > 50){
+
+  createCirclesUsingArrays(htmlIdArray, circleInternSizeNumber);
+//}
+
+
 
 function createCirclesUsingArrays(htmlIdArray, circleInternSizeNumber) {
     for (let i = 0; i < htmlIdArray.length; i++) {
@@ -58,5 +63,19 @@ function returnHtmlElementId(name) {
 
 /*Paralax */
 
-$("#apply-img").parallax({ Image: "images/paralax.png" });
-$("#data-area").parallax({imageSrc: "images/background-paralax.png"});
+let arrayIdForUseParallax = ["data-area", "apply-content"];
+let arrayImagesForParalax =["images/background-paralax.png","images/paralax.png"];
+
+
+function generateParalax(){
+  for (let i = 0; i < arrayIdForUseParallax.length; i++) {
+    paralaxActive(returnHtmlElementId(arrayIdForUseParallax[i]),arrayImagesForParalax[i]);
+  }
+}
+
+generateParalax();
+
+function paralaxActive(documentId,image){
+  $(documentId).parallax({imageSrc: image});
+}
+
