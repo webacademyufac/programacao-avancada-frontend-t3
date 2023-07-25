@@ -13,6 +13,9 @@ li {
   color: #0c0c0c;
   font-size: 14px;
 }
+.mt{
+  margin-top: 0.5rem !important;
+}
 :root {
   --laranja: #fd7e2d;
   --laranja-escuro: #7b3e14;
@@ -21,22 +24,28 @@ li {
   --cinza-claro: #d8dce0;
   --branco: #fff;
 }
-
+hr{
+  border: 1px solid var(--cinza-escuro);
+  color: var(--preto);
+  width: 200px;
+  margin: auto;
+  margin-bottom: 3em;
+}
 /* Sobre */
 #about-area {
   background-color: var(--cinza-claro);
 }
+#about-area img{
+  max-width: 80%;
+}
 .main-title {
-  margin-bottom: 65px;
+  align-self: center;
+  margin-bottom: 0.5em;
   text-align: center;
   font-size: 40px;
   color: var(--preto);
 }
-.main-title::aft {
-  width: 100px;
-  border-bottom: solid 1px #000;
-  height: 1px;
-}
+
 .title-uppercase {
   color: var(--preto);
   text-transform: uppercase;
@@ -104,6 +113,7 @@ li {
 /*Trabalhe conosco*/
 #apply-area {
   height: 500px;
+  margin-bottom: 5em
 }
 #apply-area .row,
 #apply-img,
@@ -209,28 +219,125 @@ li {
 
 /* PROJECTS */
 #projects-buttons{
-  background-color: transparent;
   margin-top: 1em;
   justify-content: center;
   align-items: center;
 }
 #projects-buttons a{
-  margin: 0 1em;
+  margin: 1em;
   width: auto;
+  background-color: transparent;
+  color: var(--preto);
+  border: solid 1px var(--preto);
+}
+#projects-buttons a:hover{
+  background-color: var(--laranja);
+  color: var(--branco);
+  border: transparent ;
 }
 #projects-area{
-  padding: 1em;
+  padding: 5em;
 }
-#projects-area img{
+
+#projects-area img:not(:first-child){
   margin-top: 1em;
 }
 
-/* NEWS LATTER */
-#newslatter input{
-  border-radius: 50px 0 0 50px;
+/* LISTA EMAIL */
+#listemail{
+  text-align: center;
+  margin-bottom: 5em;
+  background-color: var(--cinza-claro);
+  padding-bottom: 0;
 }
-#newslatter button{
+
+#listemail-form{
+  margin-bottom: 2em;
+  width: 400px;
+
+}
+#listemail input{
+  border-radius: 50px 0 0 50px;
+  height: 2.5em;
+  border-color: var(--laranja);
+}
+#listemail button{
   border-radius: 0 50px 50px 0;
   background-color: var(--laranja);
   border: transparent;
+  height: 2.5em;
+}
+#budget{
+  background-color: var(--laranja);
+  color: var(--branco);
+  padding: 4em;
+  margin: 5em 0 0 0;
+}
+#budget h1{
+  font-weight: bolder;
+  font-size: 25px;
+}
+#budget a{
+  margin-left: 1em;
+  font-weight: bolder;
+  font-size: 30px;
+  background-color: var(--branco);
+  color: var(--laranja);
+  border: transparent;
+  border-radius: 100px;
+  padding: 0.5em 1em;
+}
+.centered {
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+/* NEWS LATTER */
+#info-card span{
+  font-weight: bolder;
+  font-size: 16px;
+  color: var(--laranja);
+}
+#info-card i{
+  border: solid 1px var(--preto);
+  border-radius: 100%;
+  padding: 1em;
+  font-size: 25px;
+  margin-bottom: 1em;
+ 
+}
+#message-area{
+  margin-top: 5em;
+  border-top: solid 1px var(--laranja);
+  padding-top: 5em;
+}
+#message-area form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5em;
+}
+#message-area input, #message-area textarea{
+  margin-bottom: 1em;
+  width: 600px;
+  align-self: center;
+  border: var(--cinza-claro) 1px solid;
+  padding: 0.5em 0 0.5em 1em;
+
+}
+#message-area h4{
+  font-weight: normal;
+}
+#message-area button{
+  align-self: center;
+  font-size: 25px;
+  background-color: var(--laranja);
+  color: var(--branco);
+  border: transparent;
+  border-radius: 100px;
+  padding: 0.5em 1em;
+}
+#message-area button:hover{
+  background-color: transparent;
+  color: var(--laranja);
+  border: solid var(--laranja) 2px;
 }
