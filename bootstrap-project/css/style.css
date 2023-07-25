@@ -109,7 +109,6 @@ header, .navbar {
 /* Sobre a Empresa */
 #about-area {
     background-color: var(--color-9);
-    box-shadow: inset 0px -120px #fff, inset 0px -120px #fff;
 }
 
 .main-title {
@@ -213,7 +212,7 @@ header, .navbar {
 }   
 
 #apply-img {
-    background-image: url('../img/empresa.jpg');
+    background-image: url("../img/empresa.jpg");
     background-size: cover;
 }
 
@@ -273,12 +272,59 @@ header, .navbar {
     border-color: var(--color-5);
 }
 
+/* Orcamento */
+#store-area .container {
+    padding: 40px 100px;
+}
+
+#call-area, #store-area {
+    background-color: var(--color-3);
+    text-transform: uppercase;
+}
+
+#call-area .row, #store-area .row {
+    display: block;
+    text-align: center;
+}
+
+#call-area p, #store-area p {
+    color: var(--color-9);
+    font-weight: bold;
+    margin-bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    display: inline;
+}
+
+#call-area p {
+    font-size: 20px;
+}
+
+#call-area #call-btn, #store-area #store-btn {
+    background-color: var(--color-9);
+    color: var(--color-5);
+    font-weight: bold;
+    margin-left: 20px;
+    width: 180px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    border: 2px solid transparent;  
+}
+
+#call-area #call-btn {
+    font-size: 20px;
+}
+
+#call-area #call-btn:hover, #store-area #store-btn:hover {
+    border: 2px solid var(--color-5);
+}
 /* Footer */
 #contact-area {
     text-align: center;
 }
 
-.contact-box {
+.contact-box{
     padding-bottom: 50px;
     margin-bottom: 50px;
     border-bottom: 1px solid var(--color-5);
@@ -322,6 +368,20 @@ header, .navbar {
     color: var(--color-5);
 }
 
+/* Store */
+#store-area .container {
+    padding: 10px 100px;
+}
+
+#store-area p {
+    font-size: 16px;
+}
+
+#store-area #store-btn {
+    font-size: 16px;
+    padding: 10px;
+}
+
 /* Copy */
 
 #copy-area {
@@ -348,12 +408,6 @@ header, .navbar {
 }
 
 /* Responsividade */
-@media(max-width: 1200px) {
-    #about-area {
-        box-shadow: none
-    }
-}
-
 @media(max-width: 768px) {
   
     /* geral */

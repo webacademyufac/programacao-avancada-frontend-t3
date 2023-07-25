@@ -24,7 +24,7 @@ $(document).ready(function() {
 
   let circleA = createProgressBar(containerA, 1400, 60);
   let circleB = createProgressBar(containerB, 1600, 120);
-  let circleC = createProgressBar(containerC, 1500, 190);
+  let circleC = createProgressBar(containerC, 1500, 100);
   let circleD = createProgressBar(containerD, 2200, 20001);
   
   // Iniciando os loaders quando o usuário chegar no elemento
@@ -98,6 +98,8 @@ $(document).ready(function() {
   let teamSection = $('#team-area');
   let portfolioSection = $('#portfolio-area');
   let contactSection = $('#contact-area');
+  let storeSection = $('#store-area');
+
 
   let scrollTo = '';
 
@@ -113,14 +115,16 @@ $(document).ready(function() {
       scrollTo = teamSection;
     } else if(btnId == 'portfolio-menu') {
       scrollTo = portfolioSection;
-    } else if(btnId == 'contact-menu'){
+    } else if(btnId == 'contact-menu') {
       scrollTo = contactSection;
+    } else if (btnId == 'store-menu') {
+      scrollTo = storeSection
     } else {
       scrollTo = bannerSection;
     }
 
     $([document.documentElement, document.body]).animate({
-        scrollTop: $(scrollTo).offset().top - 70,
+        scrollTop: $(scrollTo).offset().top - 20,
     }, 300);
   });
 });
