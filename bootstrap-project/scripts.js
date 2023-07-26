@@ -1,4 +1,35 @@
-// Identificar o clique no menu
+const skillCircles = document.querySelectorAll('.circle-box #skill circle');
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.2, // O valor de interseção necessário para acionar a ação
+};
+
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      skillCircles.forEach((circle) => {
+        // Reinicia a animação toda vez que a div #data-area for visível
+        circle.style.animation = 'none';
+        circle.offsetHeight; // Trigger reflow (necessário para redefinir a animação)
+        circle.style.animation = null;
+      });
+    }
+  });
+};
+
+const observer = new IntersectionObserver(callback, options);
+const dataArea = document.getElementById('data-area');
+
+observer.observe(dataArea);
+
+
+
+
+
+
+//--------------------------------- Identificar o clique no menu -----------------------------------//
 // Verificar o item que foi clicado e fazer referência com o alvo
 // Verificar a distância entre o alvo e o topo
 // Animar o scroll até o alvo
@@ -16,7 +47,7 @@ function getScrollTopByHref(element) {
 
 function scrollToIdOnClick(event) {
   event.preventDefault();
-  const to = getScrollTopByHref(event.target) - 80;
+  const to = getScrollTopByHref(event.target) ;
   scrollToPosition(to);
 }
 
@@ -59,20 +90,36 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 30); // 60 fps
 };
-// Filtro para a seção de portfólio
 
-// pegue os estados dos botões (qual está selecionado)
-// pegue os cards
+//-------------------- Filtro para a seção de portfólio -------------------------//
+document.addEventListener("DOMContentLoaded", function () {
+  // pegue os estados dos botões (qual está selecionado)
+  const buttons = document.querySelectorAll("#portifolio-buttons a");
+  // pegue os cards
+  const projetos = document.querySelectorAll("#portifolio-area img");
 
-// adicione um evento aos botões
+  // adicione um evento aos botões
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Adicionar classe ativa ao botão clicado
+      buttons.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      button.classList.add("active");
 
-// funçao de filtro  
-  // se o filtro não está marcado para "todos"    
-    // para cada card      
-      // se o card não corresponde ao filtro        
-        // esconder o card       
-      // senão, ou seja, se o card corresponde ao filtro         
-        // mostrar o card   
-  // senão, ou seja, se o filtro está em todos    
-    // para cada card      
-      // mostre os elementos cards 
+      const tipoSelecionado = button.getAttribute("href").substring(1);
+
+      // funçao de filtro 
+      projetos.forEach((projeto) => {
+        const tipoProjeto = projeto.dataset.project;
+        // se o filtro está marcado para "todos" e card selecionado é igual tipo de card
+        if (tipoSelecionado === "todos" || tipoSelecionado === tipoProjeto) {
+          projeto.style.display = "block";
+        } else {
+          // se o card não corresponde ao filtro esconde
+          projeto.style.display = "none";
+        }
+      });
+    });
+  });
+});

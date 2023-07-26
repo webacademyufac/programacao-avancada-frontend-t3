@@ -36,9 +36,11 @@
     
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+
 
     <!-- SCRIPTS -->
-    <script src="./scripts.js"></script>
+    <script src="./scripts.js" defer></script>
 
     <!-- ICONES -->
     <script
@@ -52,7 +54,7 @@
       <nav  id="navbar-header" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div id="nav-container" class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./img/mvp-studio-branca.svg" alt="" class="d-inline-block align-text-top">
+            <img src="./img/mvp-studio-branca.svg" alt="" class="d-inline-block">
           </a>
           <div >
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,10 +69,16 @@
                   <a class="nav-link" href="#about-area">Sobre</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#team-area">Nosso time</a>
+                  <a class="nav-link" href="#services-area">Especialidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team-area">Equipe</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#portifolio-area">Portifólio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#listemail">Newslatter</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contact-area">Contato</a>
@@ -82,7 +90,6 @@
       </nav>
 
     </header>
-
     <!-- SLIDESHOW -->
     <div id="carousel-area" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -93,7 +100,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./img/banner1.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-block align-items-center">
+          <div class="carousel-caption d-block">
             <h1>First slide label</h1>
             <p>Some representative placeholder content for the first slide.</p>
             <a class="btn btn-light" role="button" href="#">Saiba mais</a>
@@ -101,7 +108,7 @@
         </div>
         <div class="carousel-item">
           <img src="./img/banner2.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-block align-items-center">
+          <div class="carousel-caption d-block">
             <h2>Second slide label</h2>
             <p>Some representative placeholder content for the second slide.</p>
             <a class="btn btn-light" role="button" href="#">Saiba mais</a>
@@ -109,7 +116,7 @@
         </div>
         <div class="carousel-item">
           <img src="./img/banner3.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-block align-items-center">
+          <div class="carousel-caption d-block">
             <h3>Third slide label</h3>
             <p>Some representative placeholder content for the third slide.</p>
             <a class="btn btn-light" role="button" href="#">Saiba mais</a>
@@ -139,35 +146,22 @@
           </div>
           <div class="col-md-6">
             <h4 class="title-uppercase">Uma agência que pensa no futuro</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Maxime explicabo dolorem ex recusandae dignissimos?</p>
-            <p>Maxime libero, quasi atque expedita officia</p>
-            <p>
-              Sequi consequatur sed ipsum voluptatem voluptates nisi eaque
-              mollitia ad!
-            </p>
-            <ul id="about-list">
-              <li>
-                <i class="fa-solid fa-bolt-lightning"></i>Lorem ipsum dolor sit
-                amet
-              </li>
-              <li>
-                <i class="fa-solid fa-bolt-lightning"></i>Lorem ipsum dolor sit
-                amet
-              </li>
-              <li>
-                <i class="fa-solid fa-bolt-lightning"></i>Lorem ipsum dolor sit
-                amet
-              </li>
-              <li>
-                <i class="fa-solid fa-bolt-lightning"></i>Lorem ipsum dolor sit
-                amet
-              </li>
-              <li>
-                <i class="fa-solid fa-bolt-lightning"></i>Lorem ipsum dolor sit
-                amet
-              </li>
-            </ul>
+            <p>A MVP Studio é uma equipe de profissionais apaixonados por tecnologia, focados em fornecer soluções computacionais inovadoras para impulsionar o crescimento do seu negócio. Combinando a potência da Inteligência Artificial, a criatividade do UX/UI e a imersão da Realidade Virtual você pode oferecer  experiências únicas para seus clientes e/ou colaboradores.</p>
+            <br/>
+            <h4 class="title-uppercase">
+              Nossos pilares:
+            </h4>
+              <ul class="about-list">
+                <li>
+                  <i class="fa-solid fa-bolt-lightning"></i> <span>Inovação e Expertise:</span><br> Nossa paixão por tecnologia impulsiona nossas mentes criativas a desenvolver soluções únicas, combinando conhecimento técnico com visão estratégica para transformar ideias em realidade.
+                </li>
+                <li>
+                  <i class="fa-solid fa-bolt-lightning"></i><span>Qualidade e Excelência:</span> <br> Buscamos a perfeição em cada detalhe, colocando a satisfação do cliente no centro de tudo o que fazemos. Nosso compromisso com a excelência garante resultados que superam expectativas.
+                </li>
+                <li>
+                  <i class="fa-solid fa-bolt-lightning"></i> <span>Versatilidade e Abrangência:</span><br>  Com um leque diversificado de serviços, atendemos a diferentes necessidades de negócio. Da criação de apps ao desenvolvimento de soluções com Inteligência Artificial, estamos preparados para qualquer desafio.
+                </li>
+              </ul>            
           </div>
         </div>
       </div>
@@ -180,43 +174,56 @@
           <h2 class="main-title">Nossas Especialidades</h2>
           <hr>
         </div>
-        <div class="col-md-4 services-box">
-          <i class="fa-solid fa-brain"></i>
-          <h3>Inteligência Artificial</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-md-4 services-box">
-          <i class="fa-brands fa-google"></i>
-          <h3>SEO</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-md-4 services-box">
-          <i class="fa-solid fa-palette"></i>
-          <h3>UX/UI Design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-md-4 services-box">
-          <i class="fa-solid fa-network-wired"></i>
-          <h3>Network</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-md-4 services-box">
+        <div class="col-md-3 services-box">
           <i class="fa-solid fa-laptop-code"></i>
-          <h3>Desenvolvimento</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h3>Sistemas Web</h3>
+          <p>Desenvolvemos sistemas web personalizados para tornar seus processos de negócio mais eficientes e produtivos.</p>
         </div>
-        <div class="col-md-4 services-box">
+        <div class="col-md-3 services-box">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h3>Aplicativos</h3>
+          <p>Transforme suas ideias em aplicativos móveis funcionais e intuitivos com a expertise da MVP Studio.</p>
+        </div>
+        <div class="col-md-3 services-box">
           <i class="fa-solid fa-cart-shopping"></i>
           <h3>E-commerce</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Crie uma loja virtual atraente e segura para expandir seus negócios no mundo do comércio eletrônico.</p>
         </div>
+        <div class="col-md-3 services-box">
+          <i class="fa-solid fa-palette"></i>
+          <h3>UX/UI Design</h3>
+          <p>Proporcionamos interfaces atraentes e amigáveis que garantem uma experiência única para seus clientes.</p>
+        </div>
+        <div class="col-md-3 services-box">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>Consultoria de TI</h3>
+          <p>Maximizamos o potencial tecnológico do seu negócio, fornecendo soluções estratégicas e orientadas ao cliente.</p>
+        </div>
+        <div class="col-md-3 services-box">
+          <i class="fa-solid fa-brain"></i>
+          <h3>Soluções com IA</h3>
+          <p>Aproveite o poder da inteligência artificial para impulsionar suas operações. </p>
+        </div>
+        <div class="col-md-3 services-box">
+          <i class="fa-solid fa-vr-cardboard"></i>
+          <h3>Ambientes de Realidade Virtual</h3>
+          <p>Explore novas possibilidades com nossos ambientes imersivos para treinamento e simulações.</p>
+        </div>
+        
+        
+        <div class="col-md-3 services-box">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3>Manutenção e Suporte de Sistemas</h3>
+          <p>Nossa equipe de suporte técnico está sempre disponível para garantir o bom funcionamento dos seus sistemas.</p>
+        </div>
+        
       </div>
     </div>
 
     <!-- DADOS -->
     <div id="data-area" class="container-fluid">
       <div class="row">
-        <div id="circle-box" class="col-md-6 col-xl-3">
+        <div class="circle-box col-md-6 col-xl-3 animate-on-scroll">
           <div id="skill">
             <div class="outer">
               <div class="inner">
@@ -224,6 +231,7 @@
               </div>
             </div>
             <svg
+              class="circle"
               xmlns="http://www.w3.org/2000/svg"
               version="1.1"
               width="160px"
@@ -239,7 +247,7 @@
           </div>
           <p>Clientes felizes</p>
         </div>
-        <div id="circle-box" class="col-md-6 col-xl-3">
+        <div class="circle-box col-md-6 col-xl-3 animate-on-scroll">
           <div id="skill">
             <div class="outer">
               <div class="inner">
@@ -247,6 +255,7 @@
               </div>
             </div>
             <svg
+              class="circle"
               xmlns="http://www.w3.org/2000/svg"
               version="1.1"
               width="160px"
@@ -260,7 +269,7 @@
           </div>
           <p>Apps desenvolvidos</p>
         </div>
-        <div id="circle-box" class="col-md-6 col-xl-3">
+        <div class=" circle-box col-md-6 col-xl-3 animate-on-scroll">
           <div id="skill">
             <div class="outer">
               <div class="inner">
@@ -268,6 +277,7 @@
               </div>
             </div>
             <svg
+              class="circle"
               xmlns="http://www.w3.org/2000/svg"
               version="1.1"
               width="160px"
@@ -281,7 +291,7 @@
           </div>
           <p>Desenvolvedores</p>
         </div>
-        <div id="circle-box" class="col-md-6 col-xl-3">
+        <div  class=" circle-box col-md-6 col-xl-3">
           <div id="skill">
             <div class="outer">
               <div class="inner">
@@ -289,6 +299,7 @@
               </div>
             </div>
             <svg
+              class="circle"
               xmlns="http://www.w3.org/2000/svg"
               version="1.1"
               width="160px"
@@ -316,13 +327,13 @@
           <div id="team-profile" class="card text-center">
             <img
               class="card-img-top"
-              alt="Nome de um colaborador"
+              alt="Foto Rafael Oliveira"
               src="./img/profile1.jpg"
             />
             <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
+              <h5 class="card-title">Rafael Oliveira</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet condasdasdasc. dasdasdasda.
+                Especialista em Realidade Virtual e IA
               </p>
             </div>
           </div>
@@ -331,13 +342,13 @@
           <div id="team-profile" class="card text-center">
             <img
               class="card-img-top"
-              alt="Nome de um colaborador"
+              alt="Foto Carla Mendes"
               src="./img/profile2.jpg"
             />
             <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
+              <h5 class="card-title">Carla Mendes</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet condasdasdasc. dasdasdasda.
+                Consultora de TI
               </p>
             </div>
           </div>
@@ -346,13 +357,13 @@
           <div id="team-profile" class="card text-center">
             <img
               class="card-img-top"
-              alt="Nome de um colaborador"
+              alt="Foto Pedro Santos"
               src="./img/profile3.jpg"
             />
             <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
+              <h5 class="card-title">Pedro Santos</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet condasdasdasc. dasdasdasda.
+                Designer de UX/UI
               </p>
             </div>
           </div>
@@ -361,13 +372,13 @@
           <div id="team-profile" class="card text-center">
             <img
               class="card-img-top"
-              alt="Nome de um colaborador"
+              alt="Foto Ana Silva"
               src="./img/profile4.jpg"
             />
             <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
+              <h5 class="card-title">Ana Silva</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet condasdasdasc. dasdasdasda.
+                Desenvolvedora Full Stack
               </p>
             </div>
           </div>
@@ -382,16 +393,12 @@
         <div id="apply-content" class="col-md-6 text-center">
           <h4 class="title-uppercase">Gosta de desafios?</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            ipsam est omnis.
-          </p>
+            Venha fazer parte da equipe da MVP Studio! Buscamos talentos apaixonados por tecnologia para fazer a diferença no mercado de soluções computacionais.           </p>
           <p>
-            Modi aspernatur distinctio id delectus laudantium quidem cum, alias
-            sequi corrupti eaque.
-          </p>
-          <p>Autem corporis iure tempore commodi saepe.</p>
+            Oferecemos um ambiente colaborativo para trabalhar em projetos inovadores, promovendo o crescimento profissional e valorizando a cultura empreendedora.           </p>
+          <p>Temos vagas para Desenvolvedor(a) Full Stack, Designer de UX/UI, Consultor(a) de TI e Especialista em Realidade Virtual e Inteligência Artificial.</p>
           <a id="apply-button" class="btn btn-primary" role="button" href="#"
-            >SAIBA MAIS</a
+            >CANDIDATAR-SE</a
           >
         </div>
       </div>
@@ -407,14 +414,14 @@
           <a class="btn btn-primary rounded-pill col" href="#todos">Todos</a>
           <a class="btn btn-primary rounded-pill col" href="#desenvolvimento">Desenvolvimento</a>
           <a class="btn btn-primary rounded-pill col" href="#design">Design</a>
-          <a class="btn btn-primary rounded-pill col" href="#SEO">SEO</a>
+          <a class="btn btn-primary rounded-pill col" href="#seo">SEO</a>
         </div>
-          <img class="col-lg-4 col-md-6" src="img/proj1.jpg" alt="Projeto 1">
-          <img class="col-lg-4 col-md-6" src="img/proj2.jpg" alt="Projeto 2">
-          <img class="col-lg-4 col-md-6" src="img/proj3.jpg" alt="Projeto 3">
-          <img class="col-lg-4 col-md-6" src="img/proj4.jpg" alt="Projeto 4">
-          <img class="col-lg-4 col-md-6" src="img/proj5.jpg" alt="Projeto 5">
-          <img class="col-lg-4 col-md-6" src="img/proj6.jpg" alt="Projeto 6">
+          <img class="col-lg-4 col-md-6" src="img/proj1.jpg" alt="Projeto 1" data-project="desenvolvimento">
+          <img class="col-lg-4 col-md-6" src="img/proj2.jpg" alt="Projeto 2" data-project="desenvolvimento">
+          <img class="col-lg-4 col-md-6" src="img/proj3.jpg" alt="Projeto 3" data-project="design">
+          <img class="col-lg-4 col-md-6" src="img/proj4.jpg" alt="Projeto 4" data-project="seo">
+          <img class="col-lg-4 col-md-6" src="img/proj5.jpg" alt="Projeto 5" data-project="design">
+          <img class="col-lg-4 col-md-6" src="img/proj6.jpg" alt="Projeto 6" data-project="seo">
       </div>
     </div>
     <!-- FIQUE POR DENTRO -->
@@ -441,30 +448,43 @@
         <div class="col-12">
           <h2 class="main-title">Entre em contato conosco</h2>
         </div>
-        <div id="info-card" class="col-4 text-center">
+        <div id="info-card" class="col-xl-4 text-center">
           <i class="fa-solid fa-phone"></i>
           <p><span>Ligue para:</span> (68) 99999-9999</p>
           <p><span>Horários:</span> 8:00 - 19:00</p>
         </div>
-        <div id="info-card" class="col-4 text-center">
+        <div id="info-card" class="col-xl-4 text-center">
           <i class="fa-solid fa-envelope"></i>
           <p><span>Envie um email:</span> contato@hdcagency.com.br</p>
         </div>
-        <div id="info-card" class="col-4 text-center">
+        <div id="info-card" class="col-xl-4 text-center">
           <i class="fa-solid fa-location-dot icon"></i>
           <p><span>Venha tomar um café:</span> Rua Lorem Ipsum - 1314</p>
         </div>
         <div id="message-area" class="row">
-          <h4 class="col-6">Ou nos deixe uma mensagem:</h4>
-          <form class="col-6">
-            <input type="email" name="email" id="email" placeholder="E-mail">
-            <input type="text" name="subject" id="subject" placeholder="Assunto">
-            <textarea name="message" id="" placeholder="Sua mensagem..." rows="5"></textarea>
-            <button class="btn btn-primary" type="button">ENVIAR</button>
-          </form>
+          <h4 class="col-12 col-md-6">Ou nos deixe uma mensagem:</h4>
+          <div class="row mx-1">
+            <form class="col-12 col-md-6 mx-2">
+              <input type="email" name="email" id="email" placeholder="E-mail">
+              <input type="text" name="subject" id="subject" placeholder="Assunto">
+              <textarea name="message" id="" placeholder="Sua mensagem..." rows="5"></textarea>
+              <button class="btn btn-primary" type="button">ENVIAR</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
     <!-- FOOTER -->
+    <footer class="d-flex flex-wrap align-items-center py-3" >
+      <div id="footer-items" class="col-12 col-md-6 text-center text-md-left d-flex justify-content-center align-items-end">
+        <img src="./img/mvp-studio-branca.svg" alt="" class="d-inline-block">
+        <p class="justify-content-center align-items-center">João Carlos Ressel &copy; MVP Studio 2023</p>
+      </div>
+      <ul id="footer-social" class="col-12 col-md-6 text-center text-md-left d-flex justify-content-center align-items-end">
+        <li class="ms-3"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li class="ms-3"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="ms-3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+      </ul>
+    </footer>
   </body>
 </html>

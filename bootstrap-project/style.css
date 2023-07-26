@@ -3,7 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container-fluid {
-  padding: 70px 0;
+  padding: 0;
 }
 .row {
   margin: 0;
@@ -34,6 +34,10 @@ hr{
 /* Carrocel */
 #carousel-area .carousel-inner, #carousel-area .carousel-item{
   height: 90vh;
+  
+}
+#carousel-area .carousel-caption{
+  top: 40%;
 }
 /* Fazer quebra para mobile */
 /* HEADER */
@@ -43,7 +47,7 @@ hr{
 #navbar-header{
   background-color: var(--preto);
 }
-header img{
+header img, footer img{
   width: 100px;
 }
 /* #carousel-area .carousel-caption{
@@ -53,15 +57,14 @@ header img{
   color: var(--branco);
   font-size: larger;
 }
-#carousel-area{
 
-}
 /* Sobre */
 #about-area {
   background-color: var(--cinza-claro);
+  padding: 10em 0 6em 0;
 }
 #about-area img{
-  max-width: 80%;
+  max-width: 80%;  
 }
 .main-title {
   align-self: center;
@@ -77,22 +80,42 @@ header img{
   font-weight: bold;
   font-size: 16px;
 }
-#about-list {
-  list-style: none;
+#about-area{
+  padding: 5%;
+}
+#about-area p{
+ text-align: justify;
+}
+#about-area ul{
   padding: 0;
 }
-#about-list i {
+.about-list li{
+  list-style: none;
+  margin:0;
+}
+.about-list i {
   margin-right: 10px;
   color: var(--preto);
 }
-#about-list i:hover {
+#abou-area span{
+  font-weight: bolder !important;
+}
+.about-list li:hover > i,
+.about-list li:hover > span {
   color: var(--laranja);
 }
-#about-list li {
+.about-list li {
   line-height: 30px;
+  
+}
+.about-list li span{
+  font-weight: bold;
 }
 
 /* Serviços */
+#services-area{
+  padding: 10em 0 6em 0;
+}
 .services-box {
   text-align: center;
   margin-bottom: 50px;
@@ -119,6 +142,7 @@ header img{
 /* Time */
 #team-area {
   margin-bottom: 65px;
+  padding-top: 10em;
 }
 #team-card {
   margin-bottom: 50px;
@@ -138,7 +162,6 @@ header img{
 /*Trabalhe conosco*/
 #apply-area {
   height: 500px;
-  margin-bottom: 5em
 }
 #apply-area .row,
 #apply-img,
@@ -177,6 +200,7 @@ header img{
 }
 /* Dados */
 #data-area {
+  padding: 6em 0;
   align-items: center;
   background-image: url(img/cidadeparallax.png);
   background-attachment: fixed;
@@ -187,7 +211,7 @@ header img{
   color: var(--branco);
   text-align: center;
 }
-#circle-box {
+.circle-box {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -227,19 +251,25 @@ header img{
   fill: none;
   stroke: url(#GradientColor);
   stroke-width: 20px;
-  stroke-dasharray: 472;
-  stroke-dashoffset: 472;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
   animation: anim 2s linear forwards;
+}
+.animate-on-scroll #data-area #skill circle {
+  animation: anim 2s linear forwards;
+  /* Adjust the animation properties as needed */
+  stroke-dashoffset: 500; /* Set the initial dash offset for the animation */
+}
+
+@keyframes anim {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 #skill svg {
   position: absolute;
   top: 0;
   left: 0;
-}
-@keyframes anim {
-  100% {
-    stroke-dashoffset: 20;
-  }
 }
 
 /* portifolio */
@@ -255,25 +285,32 @@ header img{
   color: var(--preto);
   border: solid 1px var(--preto);
 }
-#portifolio-buttons a:hover{
+#portifolio-buttons a:hover, #portifolio-buttons a.active{
   background-color: var(--laranja);
   color: var(--branco);
   border: transparent ;
 }
 #portifolio-area{
-  padding: 5em;
+  padding-top: 10em;
+  padding-bottom: 2em;
 }
 
 #portifolio-area img:not(:first-child){
   margin-top: 1em;
 }
-
+#portifolio-area img {
+  transition: opacity 0.3s ease; /* Adiciona transição suave de 0.3 segundos para a propriedade "opacity" */
+}
+#portifolio-area img:hover,
+#portifolio-area img:active {
+  opacity: 0.5; /* Opacidade reduzida ao passar o cursor ou quando clicar e segurar */
+}
 /* LISTA EMAIL */
 #listemail{
   text-align: center;
   margin-bottom: 5em;
   background-color: var(--cinza-claro);
-  padding-bottom: 0;
+  padding:6em 0 0 0;
 }
 
 #listemail-form{
@@ -329,6 +366,8 @@ header img{
   padding: 1em;
   font-size: 25px;
   margin-bottom: 1em;
+  width: 80px;
+  height: 80px;
  
 }
 #message-area{
@@ -352,7 +391,7 @@ header img{
 #message-area h4{
   font-weight: normal;
 }
-#message-area button{
+#message-area button, #carousel-area a{
   align-self: center;
   font-size: 25px;
   background-color: var(--laranja);
@@ -365,4 +404,24 @@ header img{
   background-color: transparent;
   color: var(--laranja);
   border: solid var(--laranja) 2px;
+}
+#carousel-area a:hover{
+  background-color: transparent;
+  color: var(--branco);
+  border: solid var(--branco) 2px;
+}
+
+/* footer */
+#footer-social i{
+  font-size: 16px;
+}
+footer{
+  padding: 0;
+  background-color: var(--preto);
+}
+footer p, footer ul li a i{
+  color: var(--branco);
+}
+footer p{
+  margin-left: 1em;
 }
