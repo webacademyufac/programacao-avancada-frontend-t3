@@ -23,8 +23,9 @@
     <!-- Loader - Progress Bar -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
 
-    <!-- Parallax -->
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
     <!-- Scripts em JS -->
@@ -38,39 +39,108 @@
 <body>
     
     <!-- Header -->
-
-    <!-- Slideshow -->
-
-    <!-- Sobre o MVP Studio -->
-    <main>
-        <div id="about-area" class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="main-title">
-                        Sobre o MVP Studio
-                    </h2>
-                </div>
-                <div class="col-md-6">
-                    <img class="img-fluid" src="img/agencia.jpg" alt="MVP Studio">
-                </div>
-                <div class="col-md-6">
-                    <h4 class="title-uppercase">Lorem ipsum dolor sit amet</h4>
-                    <p>Consectetur adipisicing elit.</p>
-                    <p>Molestias aliquid sint dolores repellendus voluptate.</p>
-                    <p>Id labore nobis minima, eveniet inventore iste nam.</p>
-                    <p>Confira:</p>
-                    <ul id="about-list">
-                        <li><i class="fas fa-check"></i>Lorem ipsum dolor sit
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark fixed-top" data-bs-theme="dark">
+            <div id="nav-container" class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/mvp-studio.svg" alt="Logo" class="d-inline-block align-text-top">
+                    MVP Studio
+                </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li><i class="fas fa-check"></i>Amet consectetur adipisicing elit</li>
-                        <li><i class="fas fa-check"></i>Necessitatibus, doloribus voluptate ad placeat</li>
-                        <li><i class="fas fa-check"></i>Non, asperiores incidunt, perferendis fugit animi</li>
-                        <li><i class="fas fa-check"></i>Reiciendis consectetur odio necessitatibus</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
                     </ul>
+                </div>   
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Carousel/Slideshow -->
+    <main>
+        <div id="carousel-area" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-area" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-area" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-area" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner1.png" class="d-block w-100" alt="Testando texto alternativo">
+                <div class="carousel-caption d-block">
+                    <h1>First slide label</h1>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <a href="#" class="btn btn-light" role="button">Saiba mais</a>
                 </div>
             </div>
-        </div>        
+            <div class="carousel-item">
+                <img src="img/banner2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block align-middle">
+                    <h1>Second slide label</h1>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    <a href="#" class="btn btn-light" role="button">Saiba mais</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block align-middle">
+                    <h1>Third slide label</h1>
+                    <p>Some representative placeholder content for the third slide.</p>
+                    <a href="#" class="btn btn-light" role="button">Saiba mais</a>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-area" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-area" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
+
+    <!-- Sobre o MVP Studio -->
+    
+    <div id="about-area" class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="main-title">
+                    Sobre o MVP Studio
+                </h2>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="img/agencia.jpg" alt="MVP Studio">
+            </div>
+            <div class="col-md-6">
+                <h4 class="title-uppercase">Lorem ipsum dolor sit amet</h4>
+                <p>Consectetur adipisicing elit.</p>
+                <p>Molestias aliquid sint dolores repellendus voluptate.</p>
+                <p>Id labore nobis minima, eveniet inventore iste nam.</p>
+                <p>Confira:</p>
+                <ul id="about-list">
+                    <li><i class="fas fa-check"></i>Lorem ipsum dolor sit
+                    </li>
+                    <li><i class="fas fa-check"></i>Amet consectetur adipisicing elit</li>
+                    <li><i class="fas fa-check"></i>Necessitatibus, doloribus voluptate ad placeat</li>
+                    <li><i class="fas fa-check"></i>Non, asperiores incidunt, perferendis fugit animi</li>
+                    <li><i class="fas fa-check"></i>Reiciendis consectetur odio necessitatibus</li>
+                </ul>
+            </div>
+        </div>
+    </div> 
 
     <!-- Serviços -->
 

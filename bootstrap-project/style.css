@@ -17,6 +17,32 @@ p, li {
   font-size: 14px;
 }
 
+/* Header */
+
+#nav-container {
+  padding: 0;
+}
+
+header img {
+  width: 60px;
+}
+
+/* Carousel/Slideshow */
+
+#carousel-area .carousel-inner, #carousel-area .carousel-item {
+  height: 90vh;
+  margin-top: 59px;
+}
+
+#carousel-area .carousel-caption {
+  top: 35%;
+}
+
+#carousel-area p {
+  color: white;
+  font-size: larger;
+}
+
 /* Sobre */
 
 #about-area {
