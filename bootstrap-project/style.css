@@ -31,6 +31,31 @@ hr{
   margin: auto;
   margin-bottom: 3em;
 }
+/* Carrocel */
+#carousel-area .carousel-inner, #carousel-area .carousel-item{
+  height: 90vh;
+}
+/* Fazer quebra para mobile */
+/* HEADER */
+#nav-container{
+  padding: 0 1em;
+}
+#navbar-header{
+  background-color: var(--preto);
+}
+header img{
+  width: 100px;
+}
+/* #carousel-area .carousel-caption{
+  top:30%;
+} */
+#carousel-area p{
+  color: var(--branco);
+  font-size: larger;
+}
+#carousel-area{
+
+}
 /* Sobre */
 #about-area {
   background-color: var(--cinza-claro);
@@ -217,29 +242,29 @@ hr{
   }
 }
 
-/* PROJECTS */
-#projects-buttons{
+/* portifolio */
+#portifolio-buttons{
   margin-top: 1em;
   justify-content: center;
   align-items: center;
 }
-#projects-buttons a{
+#portifolio-buttons a{
   margin: 1em;
   width: auto;
   background-color: transparent;
   color: var(--preto);
   border: solid 1px var(--preto);
 }
-#projects-buttons a:hover{
+#portifolio-buttons a:hover{
   background-color: var(--laranja);
   color: var(--branco);
   border: transparent ;
 }
-#projects-area{
+#portifolio-area{
   padding: 5em;
 }
 
-#projects-area img:not(:first-child){
+#portifolio-area img:not(:first-child){
   margin-top: 1em;
 }
 

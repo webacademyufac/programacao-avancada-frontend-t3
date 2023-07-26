@@ -33,6 +33,9 @@
       crossorigin="anonymous"
       defer
     ></script>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <!-- SCRIPTS -->
     <script src="./scripts.js"></script>
@@ -45,8 +48,83 @@
   </head>
   <body>
     <!-- HEADER -->
+    <header>
+      <nav  id="navbar-header" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div id="nav-container" class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/mvp-studio-branca.svg" alt="" class="d-inline-block align-text-top">
+          </a>
+          <div >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-area">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team-area">Nosso time</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portifolio-area">Portifólio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-area">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+      </nav>
+
+    </header>
 
     <!-- SLIDESHOW -->
+    <div id="carousel-area" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-area" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-area" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-area" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/banner1.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block align-items-center">
+            <h1>First slide label</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+            <a class="btn btn-light" role="button" href="#">Saiba mais</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner2.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block align-items-center">
+            <h2>Second slide label</h2>
+            <p>Some representative placeholder content for the second slide.</p>
+            <a class="btn btn-light" role="button" href="#">Saiba mais</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner3.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block align-items-center">
+            <h3>Third slide label</h3>
+            <p>Some representative placeholder content for the third slide.</p>
+            <a class="btn btn-light" role="button" href="#">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-area" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-area" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <!-- SOBRE MVP STUDIO -->
     <main>
@@ -318,14 +396,14 @@
         </div>
       </div>
     </div>
-    <!-- TRABALHE CONOSCO -->
-    <div id="projects-area" class="container">
+    <!-- PORTIFÓLIO -->
+    <div id="portifolio-area" class="container">
       <div class="row">
         <div class="col-12">
           <h2 class="main-title">Conheça nossos projetos</h2>
           <hr>
         </div>
-        <div id="projects-buttons" class="row">
+        <div id="portifolio-buttons" class="row">
           <a class="btn btn-primary rounded-pill col" href="#todos">Todos</a>
           <a class="btn btn-primary rounded-pill col" href="#desenvolvimento">Desenvolvimento</a>
           <a class="btn btn-primary rounded-pill col" href="#design">Design</a>
@@ -358,7 +436,7 @@
       </div>
     </div>
     <!-- FIQUE POR DENTRO -->
-    <div id="newslatter" class="container">
+    <div id="contact-area" class="container">
       <div class="row">
         <div class="col-12">
           <h2 class="main-title">Entre em contato conosco</h2>
