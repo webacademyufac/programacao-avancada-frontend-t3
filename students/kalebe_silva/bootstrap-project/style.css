@@ -22,6 +22,24 @@ p, li {
 
 }
 
+/*Menu*/
+nav{
+  padding: 0;
+}
+
+header nav {
+  height: 10vh;
+}
+#menu-home:hover{
+  color: pink;
+}
+
+#menu-home:hover{
+  transition: 1s;
+}
+
+
+
 
 /* Sobre */
 
@@ -46,7 +64,9 @@ p, li {
   background: #0c0c0c;
   margin: 10px auto;
 }
-
+#image-about-area{
+  width: 100%;
+}
 .title-uppercase{
 
   text-transform: uppercase;
