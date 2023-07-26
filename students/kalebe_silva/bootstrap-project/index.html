@@ -32,7 +32,7 @@
 <body>
   <!-- Header -->
 <header>  
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar fixed-top fixed-bottom navbar-expand-lg bg-body-tertiary ">
     <div class="container-fluid">
       <a class="nav-item nav-link" href="#">
         <img src="./images/mvp-studio.svg" width="50"  class="d-inline align-top" alt="">
@@ -43,9 +43,11 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Principal</a>
-          <a class="nav-link" href="#">Contatos</a>
-          <a class="nav-link" href="#">Sobre</a>
+          <a class="nav-link" href="#demo">Principal</a>
+          <a class="nav-link" href="#main-title">Sobre</a>
+          <a class="nav-link" href="#services-area">Serviços</a>
+          <a class="nav-link" href="#team">Nosso time</a>
+          <a class="nav-link" href="#data-area">estastisticas</a>
         </div>
       </div>
     </div>
@@ -176,7 +178,7 @@
     <div id="team-area" class="container ">
       <div class="row md-5">
         <div class="col-12">
-          <h2 class="main-title">Nosso time</h2>
+          <h2 id="team" class="main-title">Nosso time</h2>
         </div>
 
         <div  id="card one"class="col-md-6 col-xl-3">
@@ -270,9 +272,36 @@
           
         </div>
       </div>
-  <footer>
-    
-  </footer>
+    <!--Newsletter-->
+    <div class="row d-flex justify-content-center align-items-center rows">
+
+      <div class="col-md-6">
+
+
+          <div class="card">
+
+
+              <div class="text-center">
+
+                  <img src="https://i.imgur.com/Dh7U4bp.png" width="200">
+                  <span class="d-block mt-3">Subscribe to our newsletter in order not to miss new arrivals <br> promotions and discounts of our store</span>
+
+                  <div class="mx-5">
+
+
+                     <div class="input-group mb-3 mt-4">
+                        <input type="text" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-success border-rad" type="button" id="button-addon2">Subscribe</button>
+                      </div>
+                      
+
+                  </div>
+                  
+              </div>
+              
+          </div>
+          
+      </div>
 </body>
 
 </html>
