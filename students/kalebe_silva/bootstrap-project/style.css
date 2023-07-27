@@ -38,6 +38,12 @@ header nav {
   transition: 1s;
 }
 
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: right;
+  }
+}
+
 
 /*Parallax*/
 
@@ -162,6 +168,7 @@ header nav {
 /*Trabale connosco*/
 #apply-area{
   height: 500px;
+  position: relative;
 }
 
 #apply-area .row, #apply-img, #apply-content{
@@ -173,6 +180,7 @@ header nav {
   background-image: url("./images/empresa.jpg");
 
 }
+
 
 #apply-content h4, #apply-content p{
   color: white;
@@ -200,5 +208,17 @@ header nav {
 
 #card{
   margin: 20px;
+}
+
+/*Projects*/
+.project-image{
+ width: 100%;
+ margin: 10px 0px;
+}
+
+/*Buttons*/
+.project-buttons{
+  align-items: center;
+  margin: 0px 20px;
 }
 /*usar o after, e configurar a font */

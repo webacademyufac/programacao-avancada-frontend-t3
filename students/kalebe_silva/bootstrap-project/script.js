@@ -64,7 +64,7 @@ function returnHtmlElementId(name) {
 /*Paralax */
 
 let arrayIdForUseParallax = ["data-area", "apply-content"];
-let arrayImagesForParalax =["images/cidadeparallax.png","images/pattern.png"];
+let arrayImagesForParalax =["images/cidadeparallax.png","images/cidadeparallax"];
 
 
 function generateParalax(){
@@ -77,5 +77,55 @@ generateParalax();
 
 function paralaxActive(documentId,image){
   $(documentId).parallax({imageSrc: image});
+}
+
+
+/*Get buttons and images for filter in nossos projetos area */
+
+let buttonsForFilter = document.querySelectorAll(".project-buttons button");
+let projectImages = document.querySelectorAll(".project-image");
+
+/*Create events do filter */
+buttonsForFilter[0].addEventListener("click", () =>{
+  
+  setForBlackColor(buttonsForFilter[0]);
+  showElementsAfterHidden(projectImages);
+  
+})
+
+buttonsForFilter[1].addEventListener("click", ()=>{
+      hiddenProjectImageElements(projectImages);
+      showElementsAfterHidden([projectImages[0],projectImages[4]]);
+     
+      
+})
+
+buttonsForFilter[2].addEventListener("click", ()=>{
+  hiddenProjectImageElements(projectImages);
+  showElementsAfterHidden([projectImages[1],projectImages[5]]);
+ 
+  
+})
+
+buttonsForFilter[3].addEventListener("click", ()=>{
+  hiddenProjectImageElements(projectImages);
+  showElementsAfterHidden([projectImages[2],projectImages[3]]);
+ 
+  
+})
+/* functions for hiddin or visibite iamges */
+
+
+function hiddenProjectImageElements(elements){
+  
+  for(let i = 0; i < elements.length; i++){
+    elements[i].style.visibility = "hidden"
+  }
+}
+
+function showElementsAfterHidden(elements){
+  for(let i = 0; i < elements.length; i++){
+    elements[i].style.visibility = "visible";
+  }
 }
 
