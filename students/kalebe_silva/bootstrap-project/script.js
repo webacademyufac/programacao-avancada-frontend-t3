@@ -88,7 +88,7 @@ let projectImages = document.querySelectorAll(".project-image");
 /*Create events do filter */
 buttonsForFilter[0].addEventListener("click", () =>{
   
-  setForBlackColor(buttonsForFilter[0]);
+ 
   showElementsAfterHidden(projectImages);
   
 })
