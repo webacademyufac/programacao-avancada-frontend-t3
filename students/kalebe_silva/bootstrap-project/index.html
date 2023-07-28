@@ -1,101 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!--Scripts em JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+      defer
+    ></script>
 
-  <!--Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
-  <!--CSS-->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
-  <!--Scripts em JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
-    defer></script>
+    <!--Script font awesome-->
+    <script
+      src="https://kit.fontawesome.com/32421b784a.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"
+      integrity="sha512-EZhmSl/hiKyEHklogkakFnSYa5mWsLmTC4ZfvVzhqYNLPbXKAXsjUYRf2O9OlzQN33H0xBVfGSEIUeqt9astHQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <!--My script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
 
-  <!--Script font awesome-->
-  <script src="https://kit.fontawesome.com/32421b784a.js" crossorigin="anonymous" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js" integrity="sha512-EZhmSl/hiKyEHklogkakFnSYa5mWsLmTC4ZfvVzhqYNLPbXKAXsjUYRf2O9OlzQN33H0xBVfGSEIUeqt9astHQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-  <!--My script-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-  <script src="script.js" defer></script>
-</head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav
+        class="navbar fixed-top fixed-bottom navbar-expand-lg bg-body-tertiary"
+      >
+        <div class="container-fluid">
+          <a class="nav-item nav-link" href="#">
+            <img
+              src="./images/mvp-studio.svg"
+              width="50"
+              class="d-inline align-top"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#demo">Principal</a>
+              <a class="nav-link" href="#main-title">Sobre</a>
+              <a class="nav-link" href="#services-area">Serviços</a>
+              <a class="nav-link" href="#team">Nosso time</a>
+              <a class="nav-link" href="#data-area">estastisticas</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <!-- Header -->
-<header>  
-  <nav class="navbar fixed-top fixed-bottom navbar-expand-lg bg-body-tertiary ">
-    <div class="container-fluid">
-      <a class="nav-item nav-link" href="#">
-        <img src="./images/mvp-studio.svg" width="50"  class="d-inline align-top" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#demo">Principal</a>
-          <a class="nav-link" href="#main-title">Sobre</a>
-          <a class="nav-link" href="#services-area">Serviços</a>
-          <a class="nav-link" href="#team">Nosso time</a>
-          <a class="nav-link" href="#data-area">estastisticas</a>
+    <!-- Slideshow -->
+    <main>
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/banner1.png"
+              alt="Tenha seu négocio na palma da sua mão"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption">
+              <h1>Tenha seu négocio na palma da sua mão</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/banner2.png"
+              alt="Expanda o seu négocio"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption">
+              <h1>Expanda o seu négocio</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/banner3.png"
+              alt="re-imagine o seu négocio em proporções maiores"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption">
+              <h1>re-imagine o seu négocio em proporções maiores</h1>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-</header>
+      <!-- Left and right controls/icons -->
+    </main>
 
-  <!-- Slideshow -->
-  <main>
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div>
-  
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/banner1.png" alt="Tenha seu négocio na palma da sua mão" class="d-block w-100">
-        <div class="carousel-caption">
-          <h1>Tenha seu négocio na palma da sua mão</h1>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/banner2.png" alt="Expanda o seu négocio" class="d-block w-100">
-        <div class="carousel-caption">
-          <h1>
-            Expanda o seu négocio
-          </h1>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/banner3.png" alt="re-imagine o seu négocio em proporções maiores" class="d-block w-100">
-        <div class="carousel-caption">
-          <h1>re-imagine o seu négocio em proporções maiores</h1>
-        </div>
-      </div>
-
-    </div>
-  
-  
-    <!-- Left and right controls/icons -->
-
-</main>
-
-  <!-- Sobre o MVP Studio -->
+    <!-- Sobre o MVP Studio -->
 
     <div id="about-area" class="conteiner-fluid" id="about-area">
       <div class="row">
@@ -103,29 +160,46 @@
           <h2 class="main-title">Sobre o MVP Studio</h2>
         </div>
         <div class="col-md-6">
-          <img id="image-about-area"class="img-rounded" src="./images/agencia.jpg" alt="" />
+          <img
+            id="image-about-area"
+            class="img-rounded"
+            src="./images/agencia.jpg"
+            alt=""
+          />
         </div>
         <div class="col-md-6">
           <h4>Transformando ideias em realidade.</h4>
           <p>
-            Bem-vind@ ao MVP Studio! Somos especialistas em desenvolvimento de software e criação de soluções inovadoras para o seu negócio.  
+            Bem-vind@ ao MVP Studio! Somos especialistas em desenvolvimento de
+            software e criação de soluções inovadoras para o seu negócio.
           </p>
-      
+
           <ul id="about-list">
             <li>
-              <i class="fa-solid fa-lightbulb" style="color: #d8f11e;"></i>Inovação e Expertise: Nossa paixão por tecnologia impulsiona nossas mentes criativas a desenvolver soluções únicas.
+              <i class="fa-solid fa-lightbulb" style="color: #d8f11e"></i
+              >Inovação e Expertise: Nossa paixão por tecnologia impulsiona
+              nossas mentes criativas a desenvolver soluções únicas.
             </li>
             <li>
-              <i class="fa-solid fa-star" style="color: #eaff4d;"></i></i>Qualidade e Excelência: Buscamos a perfeição em cada detalhe, colocando a satisfação do cliente no centro de tudo o que fazemos. 
+              <i class="fa-solid fa-star" style="color: #eaff4d"></i>Qualidade e
+              Excelência: Buscamos a perfeição em cada detalhe, colocando a
+              satisfação do cliente no centro de tudo o que fazemos.
             </li>
             <li>
-             <i class="fa-solid fa-globe" style="color: #0d61f2;"></i>Versatilidade e Abrangência: Com um leque diversificado de serviços, atendemos a diferentes necessidades de negócio. 
+              <i class="fa-solid fa-globe" style="color: #0d61f2"></i
+              >Versatilidade e Abrangência: Com um leque diversificado de
+              serviços, atendemos a diferentes necessidades de negócio.
             </li>
             <li>
-              <i class="fa-brands fa-space-awesome" style="color: #13e752;"></i>Transforme o seu négocio: Leve sua marca diretamente para os dispositivos móveis dos seus clientes, proporcionando uma experiência inovadora e conveniente.
+              <i class="fa-brands fa-space-awesome" style="color: #13e752"></i
+              >Transforme o seu négocio: Leve sua marca diretamente para os
+              dispositivos móveis dos seus clientes, proporcionando uma
+              experiência inovadora e conveniente.
             </li>
             <li>
-              <i class="fa-solid fa-pen-nib" style="color: #36bab1;"></i></i>UX/UI design: Encante seus usuários com design e interfaces intuitivas e atraentes, oferecendo a melhor experiência de usuário possível.
+              <i class="fa-solid fa-pen-nib" style="color: #36bab1"></i>UX/UI
+              design: Encante seus usuários com design e interfaces intuitivas e
+              atraentes, oferecendo a melhor experiência de usuário possível.
             </li>
           </ul>
         </div>
@@ -139,231 +213,293 @@
           <h2 class="main-title">Nossas especialidades</h2>
         </div>
         <div class="col-md-4 service-box">
-          <i class="fa-solid fa-brain" style="color: #6a78e2;"></i>
+          <i class="fa-solid fa-brain" style="color: #6a78e2"></i>
           <h3>Inteligencia artificial</h3>
           <p></p>
         </div>
         <div class="col-md-4 service-box">
-          <i class="fa-solid fa-vr-cardboard" style="color: #35f35b;"></i>
+          <i class="fa-solid fa-vr-cardboard" style="color: #35f35b"></i>
           <h3>Ambientes de Realidade Virtual</h3>
         </div>
         <div class="col-md-4 service-box">
-          <i class="fa-solid fa-computer" style="color: #322b40;"></i>
-          <h3> Consultoria de T.I</h3>
+          <i class="fa-solid fa-computer" style="color: #322b40"></i>
+          <h3>Consultoria de T.I</h3>
           <p></p>
-
         </div>
         <div class="col-md-4 service-box">
-          <i class="fa-solid fa-cart-shopping" style="color: #d78a42;"></i>
+          <i class="fa-solid fa-cart-shopping" style="color: #d78a42"></i>
           <h3>Comércio eletrônico</h3>
           <p></p>
-
         </div>
         <div class="col-md-4 service-box">
-          <i class="fa-solid fa-paint-roller" style="color: #2ccecb;"></i>
-          <h3> UX/UI design</h3>
+          <i class="fa-solid fa-paint-roller" style="color: #2ccecb"></i>
+          <h3>UX/UI design</h3>
           <p></p>
-
         </div>
-        <div id="card-five"class="col-md-4 service-box">
-          <i class="fa-solid fa-globe" style="color: #5d8ddf;"></i>
+        <div id="card-five" class="col-md-4 service-box">
+          <i class="fa-solid fa-globe" style="color: #5d8ddf"></i>
           <h3>Sistemas web personalizados</h3>
           <p></p>
-
         </div>
       </div>
     </div>
 
     <!--Team area-->
-    <div id="team-area" class="container ">
+    <div id="team-area" class="container">
       <div class="row md-5">
         <div class="col-12">
           <h2 id="team" class="main-title">Nosso time</h2>
         </div>
 
-        <div  id="card one"class="col-md-6 col-xl-3">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="./images/profile4.jpg" alt="Card image cap">
+        <div id="card one" class="col-md-6 col-xl-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./images/profile4.jpg"
+              alt="Card image cap"
+            />
             <div class="card-body">
               <h5 class="card-title">Nayara administrações</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
           </div>
         </div>
 
-        <div id="card two"class="col-md-6 col-xl-3">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="./images/profile3.jpg" alt="Card image cap">
+        <div id="card two" class="col-md-6 col-xl-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./images/profile3.jpg"
+              alt="Card image cap"
+            />
             <div class="card-body">
               <h5 class="card-title">João design de paint</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
           </div>
         </div>
 
-        <div id="card three"class="col-md-6 col-xl-3">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="./images/profile2.jpg" alt="Card image cap">
+        <div id="card three" class="col-md-6 col-xl-3">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./images/profile2.jpg"
+              alt="Card image cap"
+            />
             <div class="card-body">
               <h5 class="card-title">Maria dos filtros</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
           </div>
         </div>
 
         <div id="card four" class="col-md-6 col-xl-3">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="./images/profile1.jpg" alt="Card image cap">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="./images/profile1.jpg"
+              alt="Card image cap"
+            />
             <div class="card-body">
               <h5 class="card-title">Caué dos computers</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
-      <!-- Dados -->
-      <div id="data-area" class="container-fluid">
-        <div class="row  text-center">
 
-          <div class="col-md-3 -6 circle-box">
-            
-            <div id="circleA">
-            </div>
-            <p>Kalebe felizes</p>
-          </div>
+    <!-- Dados -->
+    <div id="data-area" class="container-fluid">
+      <div class="row text-center">
+        <div class="col-md-3 -6 circle-box">
+          <div id="circleA"></div>
+          <p>Kalebe felizes</p>
+        </div>
 
-          <div class="col-md-3 -6 circle-box">
-            <div id="circleB"></div>
-            <p>Kalebes desenvolvidos</p>
-          </div>
+        <div class="col-md-3 -6 circle-box">
+          <div id="circleB"></div>
+          <p>Kalebes desenvolvidos</p>
+        </div>
 
-          <div class="col-md-3 -6 circle-box">
-            <div id="circleC"></div>
-            <p>Kalebes desenvolvedores</p>
-          </div>
+        <div class="col-md-3 -6 circle-box">
+          <div id="circleC"></div>
+          <p>Kalebes desenvolvedores</p>
+        </div>
 
-          <div class="col-md-3 -6 circle-box">
-            <div id="circleD"></div>
-            <p>kalebes escritos</p>
-          </div>
-
+        <div class="col-md-3 -6 circle-box">
+          <div id="circleD"></div>
+          <p>kalebes escritos</p>
         </div>
       </div>
+    </div>
 
-      <!-- Trabalhe conosco -->
-      <div class="col-12">
+    <!-- Trabalhe conosco -->
+    <div class="col-12">
       <div id="apply-area" class="container-fluid">
         <div class="row">
-          <div id="apply-img" class="col-md-6">
-          </div>
+          <div id="apply-img" class="col-md-6"></div>
           <div id="apply-content" class="col-md-6 text-center">
-            <h4 class="title-uppercase mb-2 " >Gosta de sofrer?</h4>
+            <h4 class="title-uppercase mb-2">Gosta de sofrer?</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <a  class="btn btn-primary text-uppercase button-about-more" href="#" role="button">Saiba mais</a>
+            <a
+              class="btn btn-primary text-uppercase button-about-more"
+              href="#"
+              role="button"
+              >Saiba mais</a
+            >
           </div>
-          
         </div>
       </div>
     </div>
     <!--Conheca nossos projetos-->
     <div class="container">
-
       <!-- Titulo -->
       <div class="col-12">
         <h2 class="main-title">Nossos projetos</h2>
-      </div> 
+      </div>
 
       <!--Butoes de filtro para as imagens-->
       <div class="row justify-content-center">
+        <div class="col-md-1 project-buttons">
+          <button
+            id="show-all-button"
+            type="button"
+            class="btn btn-outline-dark"
+          >
+            Todos
+          </button>
+        </div>
+
+        <div class="col-md- project-buttons">
+          <button
+            id="development-button"
+            type="button"
+            class="btn btn-outline-dark"
+          >
+            Desenvolvimento
+          </button>
+        </div>
 
         <div class="col-md-1 project-buttons">
-          <button id="show-all-button"type="button" class="btn btn-outline-dark">Todos</button>
+          <button id="design-button" type="button" class="btn btn-outline-dark">
+            Design
+          </button>
         </div>
-        
-        <div class="col-md-2 project-buttons">
-          <button id="development-button" type="button" class="btn btn-outline-dark">Desenvolvimento</button>
-        </div>
-        
+
         <div class="col-md-1 project-buttons">
-          <button id="design-button"type="button" class="btn btn-outline-dark">Design</button>
+          <button id="seo-button" type="button" class="btn btn-outline-dark">
+            SEO
+          </button>
         </div>
-        
-        <div class="col-md-1 project-buttons">
-          <button id="seo-button" type="button" class="btn btn-outline-dark">SEO</button>
-        </div>
-        
       </div>
 
       <!--Buttons de  filtro-->
       <div class="row">
-       
-          <!--Imagens dos projetos-->
+        <!--Imagens dos projetos-->
 
-          <div class="col-md-4">
-            <img id="project-image-1" class="project-image" src="./images/proj1.jpg" alt="projeto 1">
-          </div>
+        <div class="col-md-4">
+          <img
+            id="project-image-1"
+            class="project-image"
+            src="./images/proj1.jpg"
+            alt="projeto 1"
+          />
+        </div>
 
-          <div class="col-md-4">
-            <img id="project-image-2" class="project-image" src="./images/proj2.jpg" alt="projeto 1">
-          </div>
+        <div class="col-md-4">
+          <img
+            id="project-image-2"
+            class="project-image"
+            src="./images/proj2.jpg"
+            alt="projeto 1"
+          />
+        </div>
 
-          <div class="col-md-4">
-            <img id="project-image-3" class="project-image" src="./images/proj3.jpg" alt="projeto 1">
-          </div>
+        <div class="col-md-4">
+          <img
+            id="project-image-3"
+            class="project-image"
+            src="./images/proj3.jpg"
+            alt="projeto 1"
+          />
+        </div>
 
-          <div class="col-md-4">
-            <img id="project-image-4" class="project-image" src="./images/proj4.jpg" alt="projeto 1">
-          </div>
+        <div class="col-md-4">
+          <img
+            id="project-image-4"
+            class="project-image"
+            src="./images/proj4.jpg"
+            alt="projeto 1"
+          />
+        </div>
 
-          <div class="col-md-4">
-            <img id="project-image-5" class="project-image" src="./images/proj5.jpg" alt="projeto 1">
-          </div>
+        <div class="col-md-4">
+          <img
+            id="project-image-5"
+            class="project-image"
+            src="./images/proj5.jpg"
+            alt="projeto 1"
+          />
+        </div>
 
-          <div class="col-md-4">
-            <img id="project-image-6" class="project-image" src="./images/proj6.jpg" alt="projeto 1">
-          </div>
-    
-          
+        <div class="col-md-4">
+          <img
+            id="project-image-6"
+            class="project-image"
+            src="./images/proj6.jpg"
+            alt="projeto 1"
+          />
+        </div>
       </div>
     </div>
     <!--Newsletter-->
     <div class="row d-flex justify-content-center align-items-center rows">
-
       <div class="col-md-6">
+        <div class="card">
+          <div class="text-center">
+            <img src="https://i.imgur.com/Dh7U4bp.png" width="200" />
+            <span class="d-block mt-3"
+              >Subscribe to our newsletter in order not to miss new arrivals
+              <br />
+              promotions and discounts of our store</span
+            >
 
-
-          <div class="card">
-
-
-              <div class="text-center">
-
-                  <img src="https://i.imgur.com/Dh7U4bp.png" width="200">
-                  <span class="d-block mt-3">Subscribe to our newsletter in order not to miss new arrivals <br> promotions and discounts of our store</span>
-
-                  <div class="mx-5">
-
-
-                     <div class="input-group mb-3 mt-4">
-                        <input type="text" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-success border-rad" type="button" id="button-addon2">Subscribe</button>
-                      </div>
-                      
-
-                  </div>
-                  
+            <div class="mx-5">
+              <div class="input-group mb-3 mt-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter email"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-success border-rad"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Subscribe
+                </button>
               </div>
-              
+            </div>
           </div>
-          
+        </div>
       </div>
-</body>
-
+    </div>
+  </body>
 </html>
