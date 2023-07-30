@@ -149,8 +149,9 @@ $(navBtn).click(function() {
     scrollTo = bannerSection;
   }
   
-  $([document.documentElement, document.body]).animate({      scrollTop: $(scrollTo).offset().top - 70  
-}, 1500);});
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $(scrollTo).offset().top - 70
+  }, 1500);});
 
 // Filtro para a seção de portfólio
 
