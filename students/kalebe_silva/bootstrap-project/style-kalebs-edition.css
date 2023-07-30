@@ -1,5 +1,41 @@
 /*Navbar*/
 
 header nav div a > img {
+  
     width: 100px;
+    
 }
+@media only screen and (max-width: 600px ) {
+
+    header nav div a > img {
+        height: 70px ;
+        width: 70px;
+        margin: -20px 0px 20px 0px ;
+        
+    }
+
+    header nav {
+        height: 60px;
+        width: 100%;
+    
+        margin: 0px 0px 40px 0px ;
+        padding: auto;
+    }
+
+    header nav button {
+        margin: -30px 0px 0px 0px;
+        height: 35px;
+    }
+
+    header nav button .navbar-toggler-icon {
+       
+        margin: 0px 0px 0px 0px;
+        width: 25px;
+        
+    }
+    
+}
+
+
+
+  
