@@ -67,146 +67,138 @@
   <body>
     <!--Navbar-->
     <header>
-      <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img src="./images/mvp-studio.svg" alt=""
-          /></a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
-          >
-            <span class="navbar-toggler-icon justify-content-center"></span>
-          </button>
-
-          <div
-            class="offcanvas offcanvas-end text-bg-dark"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                Menu
-              </h5>
-
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+      <div class="row">
+        <div class="col-md-12">
+          <nav  class="navbar navbar-expand-xl bg-dark fixed-top">
+            <div class="container-fluid">
+              
+              <a class="navbar-brand" href="#"><img src="./images/mvp-studio.svg" alt=""></a>
+              
+              <button id="navbar-button"class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="navbar-icon" class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="d-flex">
+                  <ul class="navbar-nav ms-auto bg-dark">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Pagina principal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Especialidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Time</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Trabalhe conosco</a>
+                  </li>
+                </ul>
+                </div>
+              </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#"
-                    >Pagina principal</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Agencia</a>
-                </li>
+          
 
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Servicos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Time</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Projetos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Contato</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+         </nav>
         </div>
-      </nav>
+      </div>
     </header>
 
+
     <!--Slidebar-->
-    <div
-      id="carouselExampleInterval"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000">
-          <img
-            src="./images/banner1.png"
-            class="d-block w-100 img-fluid"
-            alt=""
-          />
+    <div class="container" id="slidebar">
+      <div class="row">
+        <div class="col-md-12">
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img
+                  src="./images/banner1.png"
+                  class="d-block w-100 img-fluid"
+                  alt=""
+                />
 
-          <div class="carousel-caption d-md-block">
-            <h1>Busca por manutencao de software?</h1>
-            <p>
-              Buscamos a perfeição em cada detalhe, colocando a satisfação do
-              cliente no centro de tudo o que fazemos.
-            </p>
-          </div>
-        </div>
+                <div class="carousel-caption d-md-block">
+                  <h1>Busca por manutencao de software?</h1>
+                  <p>
+                    Buscamos a perfeição em cada detalhe, colocando a satisfação
+                    do cliente no centro de tudo o que fazemos.
+                  </p>
+                </div>
+              </div>
 
-        <div class="carousel-item" data-bs-interval="5000">
-          <img
-            src="./images/banner2.png"
-            class="d-block w-100 img-fluid"
-            alt="..."
-          />
+              <div class="carousel-item" data-bs-interval="5000">
+                <img
+                  src="./images/banner2.png"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
 
-          <div class="carousel-caption d-md-block">
-            <h1>Quer expandir seu negocio?</h1>
-            <p>
-              Com um leque diversificado de serviços, atendemos a diferentes
-              necessidades de negócio.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img
-            src="./images/banner3.png"
-            class="d-block w-100 img-fluid"
-            alt="..."
-          />
+                <div class="carousel-caption d-md-block">
+                  <h1>Quer expandir seu negocio?</h1>
+                  <p>
+                    Com um leque diversificado de serviços, atendemos a
+                    diferentes necessidades de negócio.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img
+                  src="./images/banner3.png"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
 
-          <div class="carousel-caption d-md-block">
-            <h1>Procura por especialistas?</h1>
-            <p>
-              Somos especialistas em desenvolvimento de software e criação de
-              soluções inovadoras para o seu negócio.
-            </p>
+                <div class="carousel-caption d-md-block">
+                  <h1>Procura por especialistas?</h1>
+                  <p>
+                    Somos especialistas em desenvolvimento de software e criação
+                    de soluções inovadoras para o seu negócio.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
 
     <!--About-->
-    <div class="container text-center">
+    <div class="container text-center about-area">
       <div class="row">
         <div class="col-md-12">
           <h2 class="main-title">Sobre o MVP Studio</h2>
@@ -223,7 +215,7 @@
         </div>
 
         <div class="col-md-6">
-          <p>
+          <p class="about-text">
             No MVP Studio, somos movidos pela Inovação e Expertise, dedicados à
             Qualidade e Excelência, e abraçamos a Versatilidade e Abrangência.
           </p>
@@ -252,12 +244,13 @@
 
     <!--Skills -->
 
-    <div class="container text-center">
+    <div class="container text-center skills-container">
       <div class="row">
         <div class="col-md-12">
           <h2>Nossas especialidades</h2>
         </div>
 
+        <div class="skills-div">
         <div class="col-md-4">
           <i class="fa-solid fa-brain" style="color: #6a78e2"></i>
           <h4>Inteligência Artificial</h4>
@@ -308,6 +301,7 @@
           </p>
         </div>
       </div>
+      </div>
     </div>
 
     <!--Progress bar-->
@@ -335,28 +329,29 @@
       </div>
     </div>
 
-    <div class="container">
+    <!--Team-->
+    <div class="container team-container text-center" >
       <div class="row">
         <div class="col-md-12 text-center">
           <h2>Nosso time</h2>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 team-profile">
           <img src="./images/profile1.jpg" class="img-fluid" alt="Matias" />
           <h4 class="text-center">Matias Soma</h4>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 team-profile">
           <img src="./images/profile2.jpg" class="img-fluid" alt="Cristina" />
           <h4>Cristina Dantas</h4>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 team-profile">
           <img src="./images/profile3.jpg" class="img-fluid" alt="Cairon" />
           <h4>Cairon Lima</h4>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 team-profile">
           <img src="./images/profile4.jpg" class="img-fluid" alt="Sangila" />
           <h4>Sangila Marta</h4>
         </div>
@@ -364,7 +359,7 @@
     </div>
 
     <!--Work with us-->
-    <div class="container">
+    <div class="container work-with-us">
       <div class="row">
         <div class="col-md-12 text-center">
           <h2>Trabalhe conosco</h2>
@@ -511,29 +506,43 @@
 
       <div class="col-md-12" id="contact-line"></div>
 
-      <div class="row">
+      <div class="row" id="test">
         <div class="col-md-6">
           <p>Ou nos deixe uma mensagem</p>
         </div>
 
         <div class="col-md-6">
           <form>
+            <div class="mb-2">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
 
             <div class="mb-2">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              
-              <div class="mb-2">
-                <label for="mensageTitle" class="form-label">Assunto</label>
-                <input type="text" class="form-control" id="mensageTitle" aria-describedby="mensageTitle">
-              </div>
-            
-              <div class="mb-2">
-                <label for="mensage" class="form-label">Mensagem</label>
-                <input type="text" class="form-control" id="mensage" aria-describedby="mensage">
-              </div>
-              <div class="text-center">
+              <label for="mensageTitle" class="form-label">Assunto</label>
+              <input
+                type="text"
+                class="form-control"
+                id="mensageTitle"
+                aria-describedby="mensageTitle"
+              />
+            </div>
+
+            <div class="mb-2">
+              <label for="mensage" class="form-label">Mensagem</label>
+              <input
+                type="text"
+                class="form-control"
+                id="mensage"
+                aria-describedby="mensage"
+              />
+            </div>
+            <div class="text-center">
               <button type="submit" class="btn btn-primary">enviar</button>
             </div>
           </form>

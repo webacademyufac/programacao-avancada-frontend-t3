@@ -75,5 +75,6 @@ function generateParalax(){
 function paralaxActive(documentId,image){
   $(documentId).parallax({imageSrc: image});
   $(documentId).addClass("img-fluid");
+  $(documentId).addClass("circle-bar-parallax-img");
   
 }
