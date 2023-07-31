@@ -41,6 +41,7 @@ function returnCircleObj(internSize){
         step: function (state, circle) {
             circle.path.setAttribute("stroke", state.color);
             circle.path.setAttribute("stroke-width", state.width);
+            
       
             let value = Math.round(circle.value() * internSize);
             if (value === 0) {
@@ -61,20 +62,69 @@ function returnHtmlElementId(name) {
 
 let arrayIdForUseParallax = ["work-with-us-parallax", "progress-bar-parallax"];
 let arrayImagesForParalax = ["./images/cidadeparallax.png", "./images/pattern.png"];
-
+let ids = ["work-with-us-id","circle-parallax-id"];
 
 
 generateParalax();
 
 function generateParalax(){
   for (let i = 0; i < arrayIdForUseParallax.length; i++) {
-    paralaxActive(returnHtmlElementId(arrayIdForUseParallax[i]),arrayImagesForParalax[i]);
+    paralaxActive(returnHtmlElementId(arrayIdForUseParallax[i]),arrayImagesForParalax[i],ids[i]);
   }
 }
 
-function paralaxActive(documentId,image){
+function paralaxActive(documentId,image, ids){
   $(documentId).parallax({imageSrc: image});
   $(documentId).addClass("img-fluid");
   $(documentId).addClass("circle-bar-parallax-img");
+  $(documentId).attr("id", ids);
+}
+
+/*Get buttons and images for filter in nossos projetos area */
+
+let buttonsForFilter = document.querySelectorAll(".projects-container > div button");
+let projectImages = document.querySelectorAll(".projects-container > div img");
+
+/*Create events do filter */
+buttonsForFilter[0].addEventListener("click", () =>{
   
+ 
+  showElementsAfterHidden(projectImages);
+  
+})
+
+buttonsForFilter[1].addEventListener("click", ()=>{
+      hiddenProjectImageElements(projectImages);
+      showElementsAfterHidden([projectImages[0],projectImages[4]]);
+     
+      
+})
+
+buttonsForFilter[2].addEventListener("click", ()=>{
+  hiddenProjectImageElements(projectImages);
+  showElementsAfterHidden([projectImages[1],projectImages[5]]);
+ 
+  
+})
+
+buttonsForFilter[3].addEventListener("click", ()=>{
+  hiddenProjectImageElements(projectImages);
+  showElementsAfterHidden([projectImages[2],projectImages[3]]);
+ 
+  
+})
+/* functions for hiddin or visibite iamges */
+
+
+function hiddenProjectImageElements(elements){
+  
+  for(let i = 0; i < elements.length; i++){
+    elements[i].style.visibility = "hidden"
+  }
+}
+
+function showElementsAfterHidden(elements){
+  for(let i = 0; i < elements.length; i++){
+    elements[i].style.visibility = "visible";
+  }
 }

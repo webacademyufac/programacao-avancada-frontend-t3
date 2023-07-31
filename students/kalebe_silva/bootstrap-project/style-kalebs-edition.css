@@ -1,25 +1,23 @@
 /*Body*/
 body {
-  
+  padding: 0px;
+  margin: 0px;
 }
-h2{
-    margin:30px 0px;
+h2 {
+  margin: 30px 0px;
 }
 /*Navbar*/
-.navbar-nav {
-    
-  }
+
 header div div nav {
-   
-   height: 40px; 
+  height: 40px;
 }
 
 header div div nav a > img {
   margin-top: -26px;
-    width: 50px;
+  width: 50px;
 }
 
-header div div nav #navbar-button{
+header div div nav #navbar-button {
   margin-top: -55px;
   padding: 12px;
   width: 10px;
@@ -27,13 +25,11 @@ header div div nav #navbar-button{
   align-items: center;
 }
 
-header div div nav #navbar-icon{
-    width: 15px;
-    margin-top: -22px;
-    margin-left: -8px;
-    
+header div div nav #navbar-icon {
+  width: 15px;
+  margin-top: -22px;
+  margin-left: -8px;
 }
-
 
 /*Slidebar*/
 #slidebar {
@@ -42,31 +38,38 @@ header div div nav #navbar-icon{
 }
 
 .carousel-caption h1 {
-  font-size: 55%;
+  font-size: 70%;
 }
 .carousel-caption p {
   font-size: 55%;
 }
 
+.carousel-control-prev span {
+  width: 20px;
+}
+
+.carousel-control-next span {
+  width: 20px;
+}
 /*about */
 
-.main-title{
+.main-title {
   font-size: 27px;
   margin: 0px 0px 14px 0px;
 }
 
 .about-area div div div div {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-.about-text{
+.about-text {
   text-align: left;
   font-size: 15px;
   margin-top: 13px;
 }
 
 ul > li {
-  list-style:none;
+  list-style: none;
   text-align: left;
   font-size: 14px;
   margin: 10px 0px;
@@ -81,24 +84,24 @@ ul > li {
 .skills-container h4 {
   font-size: 20px;
 }
-.skills-div h4:hover{
-    color: rgb(102, 102, 253);
-} 
+.skills-div h4:hover {
+  color: rgb(102, 102, 253);
+}
 
-.skills-div h4::after{
+.skills-div h4::after {
   color: black;
-} 
+}
 
 .skills-div h4 {
   transition: 1s;
 }
 
 .skills-div p:hover {
-  color:rgb(101, 114, 238);
+  color: rgb(101, 114, 238);
 }
 
 .skills-div p::after {
-  color:rgb(101, 114, 238);
+  color: rgb(101, 114, 238);
 }
 
 .skills-div p {
@@ -107,8 +110,7 @@ ul > li {
 
 /*Progress bar*/
 
-.circle-area{
-
+.circle-area {
   text-align: justify;
   margin: 35px 50px 20px 59px;
   border-radius: 10px;
@@ -119,37 +121,56 @@ ul > li {
   color: rgb(124, 185, 238);
   text-align: center;
   background-size: cover;
-} 
+}
 
+#progress-bar-parallax {
+  border-radius: 20%;
+}
 .circle-bar-parallax-img {
   background-size: cover;
-  border-radius: 10%;
 }
 
 /*Team*/
 
-.team-container h2{
+.team-container h2 {
   font-size: 27px;
   margin: 30px 0px;
 }
 
-.team-profile{
-  margin-left: 35px;
+.team-profile {
+  margin-left: 14%;
   padding: 1px;
   width: 150px;
 }
 
-.team-container img{
+.team-container img {
+  margin-left: 25%;
   width: 200px;
+  border-radius: 10%;
 }
 
-.team-profile h4{
+.team-container p {
+  display: inline-flex;
+  margin-left: 46%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 11px;
+  background-color: #eef0f6;
+  border-radius: 20%;
+}
+
+.team-profile h4 {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
 }
 
 /*Work with us*/
 
-.work-with-us h2{
+.work-with-us h2 {
   font-size: 27px;
 }
 
@@ -157,43 +178,245 @@ ul > li {
   display: none;
 }
 
-.work-with-us h4{
-  color:aliceblue
+.work-with-us h4 {
+  margin-top: 10px;
+  color: aliceblue;
 }
 .work-with-us p {
   color: aliceblue;
 }
 
-.work-with-us button{
+.work-with-us button {
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 600px) {
-  header nav div a > img {
-    height: 70px;
-    width: 70px;
-    margin: -20px 0px 20px 0px;
+
+/*Projects*/
+
+.projects-container h2 {
+  margin-top: 55px;
+  font-size: 27px;
+}
+
+.projects-container button {
+  margin-bottom: 20px;
+}
+
+.projects-container img {
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 50%;
+  padding: 5px;
+}
+
+/*News*/
+.news-container {
+  margin-bottom: 20px;
+}
+
+.news-container h3 {
+  font-size: 20px;
+  margin-top: 35px;
+}
+
+/*budget*/
+
+.budget-container {
+  color: aliceblue;
+  margin-bottom: 40px;
+  background-color: #4973f2;
+  padding: 40px;
+  font-weight: bold;
+}
+
+.budget-container button {
+  color: aliceblue;
+  background-color: #2558f2;
+  border: 3px;
+  font-weight: bold;
+}
+
+/*Contact*/
+
+.contact-container i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7091f2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.contact-container h6 {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.contact-container p {
+  font-size: 12px;
+}
+
+#contact-mensage div > h6 {
+  font-size: 20px;
+}
+
+#contact-mensage form label {
+  font-size: 15px;
+}
+
+#contact-mensage form input {
+  font-size: 12px;
+}
+
+#contact-mensage form #mensage {
+  height: calc(3 * var(--input-height));
+  font-size: 12px;
+}
+
+:root {
+  --input-height: 30px;
+}
+
+#contact-mensage form button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #aabdf6;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 400px) {
+  /*Slidebar*/
+
+  .carousel-caption h1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  .carousel-caption p {
+    font-size: 80%;
   }
 
-  header nav {
-    height: 60px;
-    width: 100%;
-
-    margin: 0px 0px 40px 0px;
-    padding: auto;
+  /*Progress bar*/
+  .circle-area {
+    text-align: justify;
+    margin: 35px 50px 20px 59px;
+    border-radius: 10px;
+    margin-left: 85px;
+    width: 50%;
   }
 
-  header nav button {
-    margin: -30px 0px 0px 0px;
-    height: 35px;
+  .circle-box {
+    width: 70%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  #circle-parallax-id {
+    justify-content: center;
+    margin-left: 50px;
+    padding-top: +20%;
+    padding-bottom: +20%;
   }
 
-  header nav button .navbar-toggler-icon {
-    margin: 0px 0px 0px 0px;
-    width: 25px;
+  /*Team*/
+  .team-container h2 {
+    font-size: 27px;
+    margin: 30px 0px;
+  }
+
+  .team-profile {
+    display: inline-block;
+    justify-content: center;
+    margin-left: 17%;
+    padding: 1px;
+    width: 200px;
   }
 }
 
-#budget-blue-line {
-  background-color: blue;
-  padding: 20px;
+@media screen and (min-width: 768px) {
+  /*Navbar*/
+  header div div nav {
+    height: 50px;
+  }
+
+  header div div nav a > img {
+    margin-top: -12px;
+    width: 60px;
+  }
+
+  header div div nav #navbar-button {
+    margin-top: -5px;
+    padding: 12px;
+    width: 10px;
+    height: 10px;
+    align-items: center;
+  }
+
+  /*Slidebar*/
+  .carousel-caption h1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  .carousel-caption p {
+    font-size: 100%;
+  }
+
+  /*Skills*/
+
+  .skills-div {
+    display: contents;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Progress bar*/
+
+  .circle-box {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  #circle-parallax-id {
+    position: relative;
+  }
+  /*Team*/
+
+  .team-profile img {
+    display: flex;
+    margin: 10px -30px;
+  }
+  .team-profile p {
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18px;
+    margin-left: -30px;
+  }
+
+  /*Work with us*/
+
+  #work-with-us-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .work-with-us h4 {
+    margin-top: 20px;
+    color: aliceblue;
+  }
+/*Projects*/
+
+.projects-container > div div img{
+  
+  height: 90%;
+  width: 90%;
+}
 }
