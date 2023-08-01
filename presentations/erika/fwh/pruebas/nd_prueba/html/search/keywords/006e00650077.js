@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("new",["Function"],[["New",,[[,,,,0,"File:prog.prg:New"]]]]);

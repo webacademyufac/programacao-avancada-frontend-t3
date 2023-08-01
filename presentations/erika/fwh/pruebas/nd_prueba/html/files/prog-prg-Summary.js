@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:prog.prg","prog.prg");NDSummary.OnSummaryLoaded("File:prog.prg",[["Harbour","Harbour"]],[["Functions","Function"],["Groups","Group"]],[[1,0,1,"Functions","Functions"],[3,0,0,"New(cVar)","New"],[2,0,0,"otro( )","otro"]]);

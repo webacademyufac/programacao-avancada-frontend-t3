@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File:prog.prg",{3:"<div class=\"NDToolTip TFunction LHarbour\"><div class=\"TTSummary\">Constructor. el método que lo crea Parametros: cVar - Este é o primero parametro Devuelve: self</div></div>",2:"<div class=\"NDToolTip TFunction LHarbour\"><div class=\"TTSummary\">ESTO es otro metodo</div></div>"});
