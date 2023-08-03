@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box; /* <<< para que o padding não aumente o tamanho dos elementos */
+}
+
+/*  resetando propriedades padrões >>> */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/*  aplicando bordas >>> */
+
+div {
+    border: 2px solid #000000;
+}
+
+/*  definindo o modelo de layout >>> */
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+/*  definindo a altura dos containers >>> */
+
+.container-one,
+.container-two,
+.container-four,
+.container-five {
+    height: 100px;
+}
+
+/*  definindo as cores dos elementos >>> */
+
+.container-two {
+    background-color: #ea1c24;
+}
+
+.container-three {
+    height: 50%;
+    background-color: #bb7c54;
+}
+
+.container-five {
+    background-color: #7f7f7f;
+}
+
+.col-yellow {
+    width: 33.33%;
+    background-color: #fef200;
+}
+
+.col-orange {
+    width: 66.67%;
+    background-color: #fbd50a;
+}
+
+.col-blue {
+    width: 33.33%;
+    background-color: #00a3e8;
+}
+
+.col-green {
+    width: 33.33%;
+    background-color: #23b14d;
+}
+
+.col-purple {
+    width: 33.33%;
+    background-color: #a349a3;
+}
