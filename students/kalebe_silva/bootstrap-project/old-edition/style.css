@@ -1,0 +1,224 @@
+/* Geral */
+
+body {
+
+  font-family: "Roboto", sans-serif;
+
+}
+
+.container-fluid {
+
+  padding:  70px 0;
+
+}
+
+.row {
+  margin: 0;
+}
+
+p, li {
+  color: #0f1026;
+  font-size: 14px;
+
+}
+
+/*Menu*/
+nav{
+  padding: 0;
+}
+
+header nav {
+  height: 10vh;
+}
+#menu-home:hover{
+  color: pink;
+}
+
+#menu-home:hover{
+  transition: 1s;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: right;
+  }
+}
+
+
+/*Parallax*/
+
+/* Sobre */
+
+#about-area{
+  background-color: rgb(248, 245, 242);
+
+}
+
+.main-title{
+  margin: 0 0 65px 0;
+  text-align: center;
+  font-size: 40px;
+  color: #0f1026;
+
+
+}
+.main-title:after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 3px;
+  background: #0c0c0c;
+  margin: 10px auto;
+}
+#image-about-area{
+  width: 100%;
+}
+.title-uppercase{
+
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+#about-list{
+  list-style: none
+}
+
+#about-list i{
+  color: #4973f2;
+  margin-right: 15px;
+}
+
+#about-list li {
+  line-height: 30px;
+}
+
+/*Servicos*/
+
+
+.service-box{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.service-box i{
+  font-size: 36px;
+  color:#0f1026;
+  margin-bottom: 20px;
+
+}
+
+.service-box h3{
+  font-size: 24px;
+
+}
+
+.service-box:hover > i, .service-box:hover > h3 {
+  color: #4973f2;
+
+}
+
+.service-box i, .service-box h3{
+  transition: 1s;
+}
+
+/* Dados */
+#data-area p {
+  font-size: 20px ;
+  color: white ;
+}
+
+
+#circleA {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  
+}
+#circleB {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  
+}
+
+#circleC {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  
+}
+
+#circleD {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  
+}
+
+
+
+
+
+/*Trabale connosco*/
+#apply-area{
+  height: 500px;
+  position: relative;
+}
+
+#apply-area .row, #apply-img, #apply-content{
+  height: 100%;
+}
+
+#apply-img{
+  background-size:cover;
+  background-image: url("./images/empresa.jpg");
+
+}
+
+
+#apply-content h4, #apply-content p{
+  color: white;
+}
+
+#apply-content h4{
+  margin-top: 20%;
+}
+
+.button-about-more{
+  border-radius: 50px;
+}
+
+.button-about-more{
+  content: '';
+  background-color: aliceblue;
+  color: #0c0c0c;
+}
+
+/*Team area*/
+
+#team-area{
+  margin: 0px 0px 40px 0px;
+}
+
+#card{
+  margin: 20px;
+}
+
+/*Projects*/
+.project-image{
+ width: 100%;
+ margin: 10px 0px;
+}
+
+/*Buttons*/
+.project-buttons{
+  align-items: center;
+  margin: 0px 20px;
+}
+/*usar o after, e configurar a font */

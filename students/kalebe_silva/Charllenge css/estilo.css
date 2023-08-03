@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.general-grid {
+    display: grid;
+    grid-template-rows:0.5fr 0.5fr 3fr 1fr 0.5fr;
+    height: 100vh;
+    padding: 10px;
+   
+   
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    height: 50px;
+    margin-bottom: 5px;
+    
+    background-color: yellow;
+
+}
+nav .menu{
+   height: 50px;
+    display: flex;
+    background-color: orange;
+}
+
+ul{
+    display: inline-flex;
+}
+
+li{
+    list-style: none;
+}
+
+.my-list{
+    display: inline-block;
+}
+.search-bar{
+    width: 100%;
+}
+
+.input-bar{
+    width: 100%;
+    margin: 5px auto 0px auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 300px;
+    background-color: red;
+}
+
+.favorite-links-showcase{
+    display: flex;
+    background-color: blue;
+}
+
+.about-conteiner{
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 5px auto 0px auto;
+}
+
+
+.tutorial{
+    display: none;
+}
+
+footer{
+    
+    background-color: black;
+}
+
+
+@media(min-width:481px){
+    nav{
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .logo{
+        margin-right: 5px;
+    }
+    .menu{
+        width: 100%;
+    }
+
+    .search-bar{
+        width: 100%;
+    }
+    .input-bar{
+        width: 100%;
+    }
+
+    .about-conteiner{
+       display: grid;
+       grid-template-rows: 1fr 1fr;
+       grid-template-columns: 1fr 1fr;
+    }
+
+    .about{
+        background-color: gray;
+        grid-row: 1 / -1;
+    }
+    .tutorial{
+        display: grid;
+        background-color: aqua;
+        padding: 26px;
+        margin: 3px 5px ;
+    }
+}
+
+@media only screen and (min-width:768px){
+    nav{
+        grid-columns: 2fr 2fr;
+        grid-row: 2fr 2fr;
+    }
+
+    .logo{
+        padding: 30px;
+        width: 300px;
+
+    }
+    .menu{
+        padding: 30px;
+    }
+
+    .search-bar {
+        grid-column: 5fr;
+        margin: 10px auto;
+        width: 100%;
+        
+    }
+    .input-bar{
+        width: 100%;
+    }
+
+    .favorite-links-showcase{
+        margin: 10px 0px 0px 2px;
+    }
+
+
+    .about-conteiner{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        
+        
+    }
+
+    .about{
+        padding: 15px;
+
+    }
+
+    .tutorial{
+        display: grid;
+        margin: 5px;
+        padding: 30px;
+        align-items: center;
+
+    }
+    .video{
+        
+    }
+    footer{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+}

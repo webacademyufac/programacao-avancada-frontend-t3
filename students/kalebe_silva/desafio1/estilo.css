@@ -1,0 +1,17 @@
+* {
+    display: grid;
+}
+
+.logo {
+    margin: auto 0;
+}
+
+.logo * {
+    vertical-align: middle;
+    margin-left: 0.5em;
+}
+
+.logo span {
+    font-size: 2em;
+    font-weight: bold;
+}
